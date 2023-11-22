@@ -34,6 +34,7 @@ public class Inicio extends javax.swing.JFrame {
         PanelInicio = new javax.swing.JPanel();
         LabelInicio = new javax.swing.JLabel();
         BotonInicio = new javax.swing.JButton();
+        LabelInicio1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FrameCrear");
@@ -45,10 +46,13 @@ public class Inicio extends javax.swing.JFrame {
         PanelInicio.setPreferredSize(new java.awt.Dimension(700, 500));
 
         LabelInicio.setBackground(new java.awt.Color(0, 102, 102));
+        LabelInicio.setFont(new java.awt.Font("Twitchy.TV", 0, 100)); // NOI18N
         LabelInicio.setForeground(new java.awt.Color(255, 255, 255));
         LabelInicio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelInicio.setText("CREADOR DE TORNEOS");
+        LabelInicio.setText("mb");
         LabelInicio.setToolTipText("");
+        LabelInicio.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        LabelInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         LabelInicio.setMaximumSize(new java.awt.Dimension(2920000, 4700000));
         LabelInicio.setOpaque(true);
         LabelInicio.setPreferredSize(new java.awt.Dimension(500, 150));
@@ -64,29 +68,46 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        LabelInicio1.setBackground(new java.awt.Color(0, 102, 102));
+        LabelInicio1.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
+        LabelInicio1.setForeground(new java.awt.Color(255, 255, 255));
+        LabelInicio1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelInicio1.setText("CREADOR DE TORNEOS");
+        LabelInicio1.setToolTipText("");
+        LabelInicio1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        LabelInicio1.setAlignmentY(0.0F);
+        LabelInicio1.setMaximumSize(new java.awt.Dimension(2920000, 4700000));
+        LabelInicio1.setOpaque(true);
+        LabelInicio1.setPreferredSize(new java.awt.Dimension(500, 150));
+
         javax.swing.GroupLayout PanelInicioLayout = new javax.swing.GroupLayout(PanelInicio);
         PanelInicio.setLayout(PanelInicioLayout);
         PanelInicioLayout.setHorizontalGroup(
             PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelInicioLayout.createSequentialGroup()
+                .addGap(297, 297, 297)
+                .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelInicioLayout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(LabelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelInicioLayout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(200, 200, 200)))
-                .addGap(50, 50, 50))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
+                        .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(239, 239, 239))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
+                        .addComponent(LabelInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(114, 114, 114))))
         );
         PanelInicioLayout.setVerticalGroup(
             PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelInicioLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(LabelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
-                .addGap(100, 100, 100)
+                .addGap(93, 93, 93)
+                .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(LabelInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(90, 90, 90)
                 .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -95,15 +116,13 @@ public class Inicio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,6 +176,7 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonInicio;
     private javax.swing.JLabel LabelInicio;
+    private javax.swing.JLabel LabelInicio1;
     private javax.swing.JPanel PanelInicio;
     // End of variables declaration//GEN-END:variables
 }
