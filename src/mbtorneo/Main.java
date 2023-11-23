@@ -7,8 +7,9 @@ import mbtorneo.Persona;
 import mbtorneo.Equipo;
 public class Main {
     public static void main(String[] args) {
-        Torneo t1= new Torneo(8,"Primer Torneo");
+        ArrayList<Equipo> pe=new ArrayList<>();
         ArrayList<Partido> p=new ArrayList<>();
+        Torneo t1= new Torneo(8,"Primer Torneo",pe);
         Equipo ganador=null;
         for (int i = 0; i <= t1.getCant_equipos()-1; i+=2) {
             Partido P=new Partido(t1.getList_equipos().get(i),t1.getList_equipos().get(i+1));

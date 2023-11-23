@@ -16,7 +16,7 @@ public class crear extends javax.swing.JFrame {
     private String name;
     
     boolean a=false;
-    boolean nombre=false;
+   
     
     public crear() {
         initComponents();
@@ -209,11 +209,13 @@ public class crear extends javax.swing.JFrame {
     }//GEN-LAST:event_ImputCNombreKeyTyped
 
     private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
-        if (nombre==false){
+        
+        
+            
             ImputCNombre.setText(null);
-            nombre=true;
+            evt.consume();
 
-        }
+        
     }//GEN-LAST:event_ImputCNombreMouseClicked
 
     /**
