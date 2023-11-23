@@ -28,8 +28,6 @@ public class llaves extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ImputCNombre5 = new javax.swing.JTextField();
-        ImputCNombre6 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         LabelCrear = new javax.swing.JLabel();
         LabelCNombre = new javax.swing.JLabel();
@@ -40,32 +38,12 @@ public class llaves extends javax.swing.JFrame {
         ImputCNombre2 = new javax.swing.JTextField();
         ImputCNombre3 = new javax.swing.JTextField();
         ImputCNombre4 = new javax.swing.JTextField();
+        ImputCNombre5 = new javax.swing.JTextField();
+        ImputCNombre6 = new javax.swing.JTextField();
         ImputCNombre7 = new javax.swing.JTextField();
         ImputCNombre8 = new javax.swing.JTextField();
-        ImputCNombre9 = new javax.swing.JTextField();
-        ImputCNombre10 = new javax.swing.JTextField();
         LabelCNombre2 = new javax.swing.JLabel();
-        ImputCNombre11 = new javax.swing.JTextField();
-
-        ImputCNombre5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre5.setText("Nombre del Equipo");
-        ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre5ActionPerformed(evt);
-            }
-        });
-
-        ImputCNombre6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre6.setText("Nombre del Equipo");
-        ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre6ActionPerformed(evt);
-            }
-        });
+        ImputCNombreDT = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -92,9 +70,9 @@ public class llaves extends javax.swing.JFrame {
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre.setText("Nombre del Equipo");
         ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombreActionPerformed(evt);
+        ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreMouseClicked(evt);
             }
         });
 
@@ -117,8 +95,13 @@ public class llaves extends javax.swing.JFrame {
 
         ImputCNombre1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre1.setText("Jugador 2");
+        ImputCNombre1.setText("Jugador 1");
         ImputCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre1MouseClicked(evt);
+            }
+        });
         ImputCNombre1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ImputCNombre1ActionPerformed(evt);
@@ -127,71 +110,71 @@ public class llaves extends javax.swing.JFrame {
 
         ImputCNombre2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre2.setText("Jugador 1");
+        ImputCNombre2.setText("Jugador 2");
         ImputCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre2ActionPerformed(evt);
+        ImputCNombre2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre2MouseClicked(evt);
             }
         });
 
         ImputCNombre3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre3.setText("Jugador 4");
+        ImputCNombre3.setText("Jugador 3");
         ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre3ActionPerformed(evt);
+        ImputCNombre3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre3MouseClicked(evt);
             }
         });
 
         ImputCNombre4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre4.setText("Jugador 3");
+        ImputCNombre4.setText("Jugador 4");
         ImputCNombre4.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre4ActionPerformed(evt);
+        ImputCNombre4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre4MouseClicked(evt);
+            }
+        });
+
+        ImputCNombre5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombre5.setText("Jugador 5");
+        ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre5MouseClicked(evt);
+            }
+        });
+
+        ImputCNombre6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombre6.setText("Jugador 6");
+        ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre6MouseClicked(evt);
             }
         });
 
         ImputCNombre7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre7.setText("Jugador 5");
+        ImputCNombre7.setText("Jugador 7");
         ImputCNombre7.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre7ActionPerformed(evt);
+        ImputCNombre7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre7MouseClicked(evt);
             }
         });
 
         ImputCNombre8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre8.setText("Jugador 6");
+        ImputCNombre8.setText("Jugador 8");
         ImputCNombre8.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre8ActionPerformed(evt);
-            }
-        });
-
-        ImputCNombre9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre9.setText("Jugador 7");
-        ImputCNombre9.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre9ActionPerformed(evt);
-            }
-        });
-
-        ImputCNombre10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre10.setText("Jugador 8");
-        ImputCNombre10.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre10ActionPerformed(evt);
+        ImputCNombre8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre8MouseClicked(evt);
             }
         });
 
@@ -203,13 +186,13 @@ public class llaves extends javax.swing.JFrame {
         LabelCNombre2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         LabelCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
 
-        ImputCNombre11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre11.setText("Nombre DT");
-        ImputCNombre11.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre11ActionPerformed(evt);
+        ImputCNombreDT.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombreDT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombreDT.setText("Nombre DT");
+        ImputCNombreDT.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombreDT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreDTMouseClicked(evt);
             }
         });
 
@@ -236,31 +219,31 @@ public class llaves extends javax.swing.JFrame {
                                 .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(275, 275, 275))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(44, 44, 44)))
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(ImputCNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(ImputCNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(349, 349, 349))))
                             .addContainerGap())
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(ImputCNombre11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ImputCNombreDT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(22, 22, 22)))))
@@ -277,25 +260,25 @@ public class llaves extends javax.swing.JFrame {
                 .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ImputCNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
                 .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ImputCNombre11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombreDT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
@@ -319,58 +302,54 @@ public class llaves extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ImputCNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreActionPerformed
-
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
         new crear().setVisible(true);
 
     }//GEN-LAST:event_BotonInicioActionPerformed
 
+    private void ImputCNombre1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre1MouseClicked
+
+    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombreMouseClicked
+
+    private void ImputCNombre2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre2MouseClicked
+
+    private void ImputCNombre3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre3MouseClicked
+
+    private void ImputCNombre4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre4MouseClicked
+
+    private void ImputCNombre5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre5MouseClicked
+
+    private void ImputCNombre6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre6MouseClicked
+
+    private void ImputCNombre7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre7MouseClicked
+
+    private void ImputCNombre8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre8MouseClicked
+
+    private void ImputCNombreDTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreDTMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombreDTMouseClicked
+
     private void ImputCNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ImputCNombre1ActionPerformed
-
-    private void ImputCNombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre2ActionPerformed
-
-    private void ImputCNombre3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre3ActionPerformed
-
-    private void ImputCNombre4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre4ActionPerformed
-
-    private void ImputCNombre5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre5ActionPerformed
-
-    private void ImputCNombre6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre6ActionPerformed
-
-    private void ImputCNombre7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre7ActionPerformed
-
-    private void ImputCNombre8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre8ActionPerformed
-
-    private void ImputCNombre9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre9ActionPerformed
-
-    private void ImputCNombre10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre10ActionPerformed
-
-    private void ImputCNombre11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -402,7 +381,7 @@ public class llaves extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new llaves().setVisible(true);
+                
             }
         });
     }
@@ -411,8 +390,6 @@ public class llaves extends javax.swing.JFrame {
     private javax.swing.JButton BotonInicio;
     private javax.swing.JTextField ImputCNombre;
     private javax.swing.JTextField ImputCNombre1;
-    private javax.swing.JTextField ImputCNombre10;
-    private javax.swing.JTextField ImputCNombre11;
     private javax.swing.JTextField ImputCNombre2;
     private javax.swing.JTextField ImputCNombre3;
     private javax.swing.JTextField ImputCNombre4;
@@ -420,7 +397,7 @@ public class llaves extends javax.swing.JFrame {
     private javax.swing.JTextField ImputCNombre6;
     private javax.swing.JTextField ImputCNombre7;
     private javax.swing.JTextField ImputCNombre8;
-    private javax.swing.JTextField ImputCNombre9;
+    private javax.swing.JTextField ImputCNombreDT;
     private javax.swing.JLabel LabelCNombre;
     private javax.swing.JLabel LabelCNombre1;
     private javax.swing.JLabel LabelCNombre2;

@@ -5,18 +5,22 @@
  */
 
 package mbtorneo;
-
+import java.util.ArrayList;
+import mbtorneo.Torneo;
 /**
  *
  * @author Juli
  */
 public class crear extends javax.swing.JFrame {
-
-    /**
-     * Creates new form crear
-     */
+    private int cant=8;
+    private String name;
+    
+    boolean a=false;
+   
+    
     public crear() {
         initComponents();
+        setLocationRelativeTo(this);
     }
 
     /**
@@ -62,9 +66,14 @@ public class crear extends javax.swing.JFrame {
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre.setText("Nombre del torneo");
         ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombreActionPerformed(evt);
+        ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreMouseClicked(evt);
+            }
+        });
+        ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputCNombreKeyTyped(evt);
             }
         });
 
@@ -110,7 +119,6 @@ public class crear extends javax.swing.JFrame {
                             .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(91, 91, 91))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
                                 .addComponent(DesplegableCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -161,13 +169,47 @@ public class crear extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
-    private void ImputCNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreActionPerformed
-
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
-        // TODO add your handling code here:
+        if (a==true)  {
+            switch ( DesplegableCEquipos.getSelectedIndex()){
+                case  0 :
+                    cant=8;
+                    break;
+                case  1 :
+                    cant=16;
+                    break;
+                case  2 :
+                    cant=32; 
+                    break;
+                    
+                
+            }
+            name=ImputCNombre.getText();
+            ArrayList<Equipo> list_equipos = new ArrayList<>();
+            Torneo t=new Torneo(cant,name,list_equipos);
+            new equipos(t,0).setVisible(true);
+            dispose();
+        }// TODO add your handling code here:
     }//GEN-LAST:event_BotonCrearActionPerformed
+
+    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
+       
+        
+        a=true;
+        
+        
+        
+    }//GEN-LAST:event_ImputCNombreKeyTyped
+
+    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
+        
+        if (a==false){
+            
+            ImputCNombre.setText(null);
+            
+
+        }
+    }//GEN-LAST:event_ImputCNombreMouseClicked
 
     /**
      * @param args the command line arguments
@@ -195,11 +237,14 @@ public class crear extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+       
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new crear().setVisible(true);
+                
+                
+                
             }
         });
     }
