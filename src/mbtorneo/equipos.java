@@ -5,6 +5,7 @@
  */
 package mbtorneo;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import mbtorneo.Equipo;
@@ -34,6 +35,7 @@ public class equipos extends javax.swing.JFrame {
         setLocationRelativeTo(this);
         t1 = t;
         r1 = r;
+
     }
 
     /**
@@ -86,6 +88,7 @@ public class equipos extends javax.swing.JFrame {
 
         ImputCNombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
         ImputCNombre.setText("Equipo");
         ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
         ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -93,6 +96,7 @@ public class equipos extends javax.swing.JFrame {
                 ImputCNombreMouseClicked(evt);
             }
         });
+
         ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ImputCNombreActionPerformed(evt);
@@ -106,7 +110,10 @@ public class equipos extends javax.swing.JFrame {
 
         BotonInicio.setText("SIGUIENTE");
         BotonInicio.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        BotonInicio.setMaximumSize(new java.awt.Dimension(73000, 200003));
+
+        BotonInicio.setMaximumSize(new java.awt.Dimension(180, 50));
+        BotonInicio.setMinimumSize(new java.awt.Dimension(180, 50));
+
         BotonInicio.setOpaque(false);
         BotonInicio.setPreferredSize(new java.awt.Dimension(150, 25));
         BotonInicio.addActionListener(new java.awt.event.ActionListener() {
@@ -125,9 +132,11 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre1.setText("Jugador 1");
         ImputCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre1MouseClicked(evt);
+
             }
         });
         ImputCNombre1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -140,9 +149,11 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre2.setText("Jugador 2");
         ImputCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre2MouseClicked(evt);
+
             }
         });
         ImputCNombre2.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -155,6 +166,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre3.setText("Jugador 3");
         ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre3MouseClicked(evt);
@@ -163,6 +175,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombre3KeyTyped(evt);
+
             }
         });
 
@@ -170,6 +183,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre4.setText("Jugador 4");
         ImputCNombre4.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre4MouseClicked(evt);
@@ -178,6 +192,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombre4KeyTyped(evt);
+
             }
         });
 
@@ -185,6 +200,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre5.setText("Jugador 5");
         ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre5MouseClicked(evt);
@@ -193,6 +209,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombre5KeyTyped(evt);
+
             }
         });
 
@@ -200,6 +217,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre6.setText("Jugador 6");
         ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre6MouseClicked(evt);
@@ -208,6 +226,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre6.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombre6KeyTyped(evt);
+
             }
         });
 
@@ -215,6 +234,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre7.setText("Jugador 7");
         ImputCNombre7.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre7MouseClicked(evt);
@@ -223,6 +243,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre7.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombre7KeyTyped(evt);
+
             }
         });
 
@@ -230,6 +251,7 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre8.setText("Jugador 8");
         ImputCNombre8.setPreferredSize(new java.awt.Dimension(300, 75));
+
         ImputCNombre8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ImputCNombre8MouseClicked(evt);
@@ -238,19 +260,23 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre8.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombre8KeyTyped(evt);
+
             }
         });
 
         LabelCNombre2.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
         LabelCNombre2.setForeground(new java.awt.Color(255, 255, 255));
         LabelCNombre2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCNombre2.setText("DIRECTOR técnico");
+
+        LabelCNombre2.setText("Director técnico");
+
         LabelCNombre2.setToolTipText("");
         LabelCNombre2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         LabelCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
 
         ImputCNombreDT.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombreDT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
         ImputCNombreDT.setText("DT");
         ImputCNombreDT.setPreferredSize(new java.awt.Dimension(300, 75));
         ImputCNombreDT.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -258,122 +284,135 @@ public class equipos extends javax.swing.JFrame {
                 ImputCNombreDTMouseClicked(evt);
             }
         });
+
         ImputCNombreDT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ImputCNombreDTActionPerformed(evt);
             }
         });
+
         ImputCNombreDT.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombreDTKeyTyped(evt);
             }
         });
 
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(46, Short.MAX_VALUE)
+
+                .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(161, 161, 161)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(89, 89, 89)
+                                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                 .addGap(93, 93, 93))
-                            .addComponent(ImputCNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ImputCNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE))
                         .addGap(193, 193, 193))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(LabelCrear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(103, 103, 103))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(235, 235, 235)
+                        .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGap(275, 275, 275))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(ImputCNombre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ImputCNombre2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(44, 44, 44))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(103, 103, 103))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(275, 275, 275))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(ImputCNombre3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(44, 44, 44)))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(349, 349, 349))))
-                            .addContainerGap())
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(ImputCNombreDT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(22, 22, 22)))))
+                                .addComponent(ImputCNombre4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(ImputCNombre7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ImputCNombre8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(ImputCNombre5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ImputCNombre6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(56, 56, 56)
+                                .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addGap(349, 349, 349)))
+                        .addGap(44, 44, 44))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(ImputCNombreDT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(106, 106, 106)
+                        .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22))))
+
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+
+                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 62, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelCNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ImputCNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelCNombre1, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ImputCNombre2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ImputCNombre6, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(ImputCNombre5, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ImputCNombre8, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(ImputCNombre7, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                 .addGap(19, 19, 19)
-                .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ImputCNombreDT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(ImputCNombreDT, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                        .addGap(10, 10, 10))
+                    .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
+                .addGap(22, 22, 22))
+
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(580, Short.MAX_VALUE))
+
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 140, Short.MAX_VALUE))
+
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
 
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
         if (ImputCNombre!=null && ImputCNombre1!=null && ImputCNombre2!=null && ImputCNombre3!=null && ImputCNombre4!=null && ImputCNombre5!=null &&ImputCNombre6!=null &&ImputCNombre7!=null && ImputCNombre8!=null && ImputCNombreDT!=null) {
@@ -551,6 +590,7 @@ public class equipos extends javax.swing.JFrame {
         Equipo e = new Equipo(DT, nombree, list_jugadores);
         return e;
     }
+
 
     /**
      * @param args the command line arguments

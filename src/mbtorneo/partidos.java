@@ -37,6 +37,7 @@ public class partidos extends javax.swing.JFrame {
         BotonInicio = new javax.swing.JButton();
         LabelCNombre1 = new javax.swing.JLabel();
         ImputCNombre1 = new javax.swing.JTextField();
+
         ImputCNombre2 = new javax.swing.JTextField();
         ImputCNombre3 = new javax.swing.JTextField();
         ImputCNombre4 = new javax.swing.JTextField();
@@ -44,6 +45,7 @@ public class partidos extends javax.swing.JFrame {
         ImputCNombre8 = new javax.swing.JTextField();
         ImputCNombre9 = new javax.swing.JTextField();
         ImputCNombre10 = new javax.swing.JTextField();
+
         LabelCNombre2 = new javax.swing.JLabel();
         ImputCNombre11 = new javax.swing.JTextField();
 
@@ -72,6 +74,9 @@ public class partidos extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
 
+        jPanel1.setLayout(null);
+
+
         LabelCrear.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         LabelCrear.setForeground(new java.awt.Color(255, 255, 255));
         LabelCrear.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -82,11 +87,19 @@ public class partidos extends javax.swing.JFrame {
         LabelCrear.setMaximumSize(new java.awt.Dimension(210003, 290000));
         LabelCrear.setPreferredSize(new java.awt.Dimension(480, 100));
 
+        jPanel1.add(LabelCrear);
+        LabelCrear.setBounds(120, 70, 480, 100);
+
+
         LabelCNombre.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
         LabelCNombre.setForeground(new java.awt.Color(255, 255, 255));
         LabelCNombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelCNombre.setText("NOMBRE");
         LabelCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
+
+        jPanel1.add(LabelCNombre);
+        LabelCNombre.setBounds(47, 110, 300, 75);
+
 
         ImputCNombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -97,6 +110,10 @@ public class partidos extends javax.swing.JFrame {
                 ImputCNombreActionPerformed(evt);
             }
         });
+
+        jPanel1.add(ImputCNombre);
+        ImputCNombre.setBounds(352, 110, 300, 75);
+
 
         BotonInicio.setText("SIGUIENTE");
         BotonInicio.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -109,11 +126,19 @@ public class partidos extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.add(BotonInicio);
+        BotonInicio.setBounds(122, 215, 150, 25);
+
+
         LabelCNombre1.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
         LabelCNombre1.setForeground(new java.awt.Color(255, 255, 255));
         LabelCNombre1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelCNombre1.setText("JUGADORES");
         LabelCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
+
+        jPanel1.add(LabelCNombre1);
+        LabelCNombre1.setBounds(277, 190, 300, 75);
+
 
         ImputCNombre1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -125,6 +150,22 @@ public class partidos extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.add(ImputCNombre1);
+        ImputCNombre1.setBounds(47, 270, 300, 75);
+
+        ImputCNombre3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombre3.setText("Jugador 4");
+        ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImputCNombre3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ImputCNombre3);
+        ImputCNombre3.setBounds(352, 270, 300, 75);
+
+
         ImputCNombre2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre2.setText("Jugador 1");
@@ -134,6 +175,10 @@ public class partidos extends javax.swing.JFrame {
                 ImputCNombre2ActionPerformed(evt);
             }
         });
+
+        jPanel1.add(ImputCNombre2);
+        ImputCNombre2.setBounds(47, 350, 300, 75);
+
 
         ImputCNombre3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -145,6 +190,7 @@ public class partidos extends javax.swing.JFrame {
             }
         });
 
+
         ImputCNombre4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre4.setText("Jugador 3");
@@ -154,6 +200,10 @@ public class partidos extends javax.swing.JFrame {
                 ImputCNombre4ActionPerformed(evt);
             }
         });
+
+        jPanel1.add(ImputCNombre4);
+        ImputCNombre4.setBounds(352, 350, 300, 75);
+
 
         ImputCNombre7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -165,6 +215,10 @@ public class partidos extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.add(ImputCNombre7);
+        ImputCNombre7.setBounds(47, 430, 300, 75);
+
+
         ImputCNombre8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre8.setText("Jugador 6");
@@ -174,6 +228,22 @@ public class partidos extends javax.swing.JFrame {
                 ImputCNombre8ActionPerformed(evt);
             }
         });
+
+        jPanel1.add(ImputCNombre8);
+        ImputCNombre8.setBounds(352, 430, 300, 75);
+
+        ImputCNombre10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombre10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombre10.setText("Jugador 8");
+        ImputCNombre10.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImputCNombre10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ImputCNombre10);
+        ImputCNombre10.setBounds(47, 510, 300, 75);
+
 
         ImputCNombre9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -185,6 +255,10 @@ public class partidos extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.add(ImputCNombre9);
+        ImputCNombre9.setBounds(352, 510, 300, 75);
+
+
         ImputCNombre10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre10.setText("Jugador 8");
@@ -195,13 +269,18 @@ public class partidos extends javax.swing.JFrame {
             }
         });
 
+
         LabelCNombre2.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
         LabelCNombre2.setForeground(new java.awt.Color(255, 255, 255));
         LabelCNombre2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         LabelCNombre2.setText("DIRECTOR técnico");
         LabelCNombre2.setToolTipText("");
         LabelCNombre2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         LabelCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
+        jPanel1.add(LabelCNombre2);
+        LabelCNombre2.setBounds(47, 590, 300, 75);
+
 
         ImputCNombre11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -212,6 +291,10 @@ public class partidos extends javax.swing.JFrame {
                 ImputCNombre11ActionPerformed(evt);
             }
         });
+
+        jPanel1.add(ImputCNombre11);
+        ImputCNombre11.setBounds(352, 590, 300, 75);
+
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -299,6 +382,7 @@ public class partidos extends javax.swing.JFrame {
                     .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
+
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

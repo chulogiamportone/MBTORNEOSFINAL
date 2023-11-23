@@ -30,326 +30,230 @@ public class llaves extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         LabelCrear = new javax.swing.JLabel();
-        LabelCNombre = new javax.swing.JLabel();
-        ImputCNombre = new javax.swing.JTextField();
-        BotonInicio = new javax.swing.JButton();
-        LabelCNombre1 = new javax.swing.JLabel();
-        ImputCNombre1 = new javax.swing.JTextField();
-        ImputCNombre2 = new javax.swing.JTextField();
-        ImputCNombre3 = new javax.swing.JTextField();
-        ImputCNombre4 = new javax.swing.JTextField();
-        ImputCNombre5 = new javax.swing.JTextField();
-        ImputCNombre6 = new javax.swing.JTextField();
-        ImputCNombre7 = new javax.swing.JTextField();
-        ImputCNombre8 = new javax.swing.JTextField();
-        LabelCNombre2 = new javax.swing.JLabel();
-        ImputCNombreDT = new javax.swing.JTextField();
+
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        jSeparator6 = new javax.swing.JSeparator();
+        jSeparator7 = new javax.swing.JSeparator();
+
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
+
+        jPanel1.setMaximumSize(null);
+        jPanel1.setMinimumSize(null);
+        jPanel1.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.setLayout(null);
+
 
         LabelCrear.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         LabelCrear.setForeground(new java.awt.Color(255, 255, 255));
         LabelCrear.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCrear.setText("NUEVO EQUIPO");
+
+        LabelCrear.setText("CRUCES");
+
         LabelCrear.setToolTipText("");
         LabelCrear.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         LabelCrear.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         LabelCrear.setMaximumSize(new java.awt.Dimension(210003, 290000));
         LabelCrear.setPreferredSize(new java.awt.Dimension(480, 100));
+        jPanel1.add(LabelCrear);
+        LabelCrear.setBounds(270, 0, 540, 57);
 
-        LabelCNombre.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
-        LabelCNombre.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCNombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCNombre.setText("NOMBRE");
-        LabelCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
+        jLabel1.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("jLabel1");
+        jLabel1.setMaximumSize(null);
+        jLabel1.setMinimumSize(null);
+        jLabel1.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(30, 80, 150, 45);
 
-        ImputCNombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre.setText("Nombre del Equipo");
-        ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombreMouseClicked(evt);
-            }
-        });
+        jLabel2.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("jLabel2");
+        jLabel2.setMaximumSize(null);
+        jLabel2.setMinimumSize(null);
+        jLabel2.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(30, 160, 150, 45);
 
-        BotonInicio.setText("SIGUIENTE");
-        BotonInicio.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        BotonInicio.setMaximumSize(new java.awt.Dimension(73000, 200003));
-        BotonInicio.setOpaque(false);
-        BotonInicio.setPreferredSize(new java.awt.Dimension(150, 25));
-        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonInicioActionPerformed(evt);
-            }
-        });
+        jLabel3.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("jLabel3");
+        jLabel3.setMaximumSize(null);
+        jLabel3.setMinimumSize(null);
+        jLabel3.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(30, 300, 150, 45);
 
-        LabelCNombre1.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
-        LabelCNombre1.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCNombre1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCNombre1.setText("JUGADORES");
-        LabelCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
+        jLabel4.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("jLabel4");
+        jLabel4.setMaximumSize(null);
+        jLabel4.setMinimumSize(null);
+        jLabel4.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(30, 380, 150, 45);
 
-        ImputCNombre1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre1.setText("Jugador 1");
-        ImputCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre1MouseClicked(evt);
-            }
-        });
-        ImputCNombre1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre1ActionPerformed(evt);
-            }
-        });
+        jLabel5.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("jLabel5");
+        jLabel5.setMaximumSize(null);
+        jLabel5.setMinimumSize(null);
+        jLabel5.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(220, 120, 150, 45);
 
-        ImputCNombre2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre2.setText("Jugador 2");
-        ImputCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre2MouseClicked(evt);
-            }
-        });
+        jLabel6.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("jLabel6");
+        jLabel6.setMaximumSize(null);
+        jLabel6.setMinimumSize(null);
+        jLabel6.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(380, 240, 150, 45);
 
-        ImputCNombre3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre3.setText("Jugador 3");
-        ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre3MouseClicked(evt);
-            }
-        });
+        jLabel7.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("jLabel7");
+        jLabel7.setMaximumSize(null);
+        jLabel7.setMinimumSize(null);
+        jLabel7.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(220, 340, 150, 45);
 
-        ImputCNombre4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre4.setText("Jugador 4");
-        ImputCNombre4.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre4MouseClicked(evt);
-            }
-        });
+        jLabel8.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("jLabel8");
+        jLabel8.setMaximumSize(null);
+        jLabel8.setMinimumSize(null);
+        jLabel8.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(540, 240, 150, 45);
 
-        ImputCNombre5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre5.setText("Jugador 5");
-        ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre5MouseClicked(evt);
-            }
-        });
+        jLabel9.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("jLabel9");
+        jLabel9.setMaximumSize(null);
+        jLabel9.setMinimumSize(null);
+        jLabel9.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(700, 120, 150, 45);
 
-        ImputCNombre6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre6.setText("Jugador 6");
-        ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre6MouseClicked(evt);
-            }
-        });
+        jLabel10.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("jLabel10");
+        jLabel10.setMaximumSize(null);
+        jLabel10.setMinimumSize(null);
+        jLabel10.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(890, 80, 150, 45);
 
-        ImputCNombre7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre7.setText("Jugador 7");
-        ImputCNombre7.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre7MouseClicked(evt);
-            }
-        });
+        jLabel11.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("jLabel11");
+        jLabel11.setMaximumSize(null);
+        jLabel11.setMinimumSize(null);
+        jLabel11.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(890, 160, 150, 45);
 
-        ImputCNombre8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre8.setText("Jugador 8");
-        ImputCNombre8.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombre8MouseClicked(evt);
-            }
-        });
+        jLabel12.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("jLabel12");
+        jLabel12.setMaximumSize(null);
+        jLabel12.setMinimumSize(null);
+        jLabel12.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(700, 340, 150, 45);
 
-        LabelCNombre2.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
-        LabelCNombre2.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCNombre2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCNombre2.setText("DIRECTOR técnico");
-        LabelCNombre2.setToolTipText("");
-        LabelCNombre2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        LabelCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
+        jLabel13.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("jLabel13");
+        jLabel13.setMaximumSize(null);
+        jLabel13.setMinimumSize(null);
+        jLabel13.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel13);
+        jLabel13.setBounds(890, 300, 150, 45);
 
-        ImputCNombreDT.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombreDT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombreDT.setText("Nombre DT");
-        ImputCNombreDT.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombreDT.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ImputCNombreDTMouseClicked(evt);
-            }
-        });
+        jLabel14.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("jLabel14");
+        jLabel14.setMaximumSize(null);
+        jLabel14.setMinimumSize(null);
+        jLabel14.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(890, 380, 150, 45);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(46, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(93, 93, 93))
-                            .addComponent(ImputCNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(193, 193, 193))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(103, 103, 103))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(275, 275, 275))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(44, 44, 44)))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(349, 349, 349))))
-                            .addContainerGap())
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(ImputCNombreDT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(22, 22, 22)))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ImputCNombreDT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
-        );
+        jButton1.setText("SIGUIENTE");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(860, 499, 180, 50);
+        jPanel1.add(jSeparator1);
+        jSeparator1.setBounds(290, 270, 90, 10);
+        jPanel1.add(jSeparator2);
+        jSeparator2.setBounds(100, 150, 120, 10);
+        jPanel1.add(jSeparator3);
+        jSeparator3.setBounds(100, 370, 120, 10);
+        jPanel1.add(jSeparator4);
+        jSeparator4.setBounds(850, 370, 120, 10);
+        jPanel1.add(jSeparator5);
+        jSeparator5.setBounds(850, 150, 120, 10);
+        jPanel1.add(jSeparator6);
+        jSeparator6.setBounds(530, 270, 10, 10);
+        jPanel1.add(jSeparator7);
+        jSeparator7.setBounds(690, 270, 90, 10);
+
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(580, Short.MAX_VALUE))
+
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1050, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 140, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        new crear().setVisible(true);
-
-    }//GEN-LAST:event_BotonInicioActionPerformed
-
-    private void ImputCNombre1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre1MouseClicked
-
-    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreMouseClicked
-
-    private void ImputCNombre2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre2MouseClicked
-
-    private void ImputCNombre3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre3MouseClicked
-
-    private void ImputCNombre4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre4MouseClicked
-
-    private void ImputCNombre5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre5MouseClicked
-
-    private void ImputCNombre6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre6MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre6MouseClicked
-
-    private void ImputCNombre7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre7MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre7MouseClicked
-
-    private void ImputCNombre8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre8MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre8MouseClicked
-
-    private void ImputCNombreDTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreDTMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreDTMouseClicked
-
-    private void ImputCNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -381,27 +285,37 @@ public class llaves extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
+
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonInicio;
-    private javax.swing.JTextField ImputCNombre;
-    private javax.swing.JTextField ImputCNombre1;
-    private javax.swing.JTextField ImputCNombre2;
-    private javax.swing.JTextField ImputCNombre3;
-    private javax.swing.JTextField ImputCNombre4;
-    private javax.swing.JTextField ImputCNombre5;
-    private javax.swing.JTextField ImputCNombre6;
-    private javax.swing.JTextField ImputCNombre7;
-    private javax.swing.JTextField ImputCNombre8;
-    private javax.swing.JTextField ImputCNombreDT;
-    private javax.swing.JLabel LabelCNombre;
-    private javax.swing.JLabel LabelCNombre1;
-    private javax.swing.JLabel LabelCNombre2;
+
     private javax.swing.JLabel LabelCrear;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+
     // End of variables declaration//GEN-END:variables
 }
