@@ -7,20 +7,26 @@
 package mbtorneo;
 
 import java.awt.Font;
+import javax.swing.WindowConstants;
+
 
 /**
  *
  * @author Juli
  */
 public class Inicio extends javax.swing.JFrame {
+    
+    
+   
     public Inicio() {
         
         initComponents();
-        LabelInicio.setFont(new Font("Twitchy.TV",0,16));
+        setLocationRelativeTo(this);
 
 
         
     }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -130,8 +136,9 @@ public class Inicio extends javax.swing.JFrame {
 
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
         new crear().setVisible(true);
-           
-
+        dispose();
+        
+        
         
     }//GEN-LAST:event_BotonInicioActionPerformed
 
@@ -165,8 +172,8 @@ public class Inicio extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
-                new Inicio().setVisible(true);
+                Inicio a = new Inicio();
+                a.setVisible(true);
                 
             }
         });

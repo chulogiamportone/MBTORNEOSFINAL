@@ -6,17 +6,16 @@
 
 package mbtorneo;
 
-/**
- *
- * @author Juli
- */
+ 
 public class equipos extends javax.swing.JFrame {
-
+   
+   
     /**
      * Creates new form equipos
      */
-    public equipos() {
+    public equipos(Torneo t) {
         initComponents();
+        
     }
 
     /**
@@ -403,7 +402,8 @@ public class equipos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new equipos().setVisible(true);
+                
+               
             }
         });
     }

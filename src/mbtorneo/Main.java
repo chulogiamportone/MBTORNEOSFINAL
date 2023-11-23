@@ -1,5 +1,10 @@
+package mbtorneo;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import mbtorneo.Partido;
+import mbtorneo.Torneo;
+import mbtorneo.Persona;
+import mbtorneo.Equipo;
 public class Main {
     public static void main(String[] args) {
         Torneo t1= new Torneo(8,"Primer Torneo");
