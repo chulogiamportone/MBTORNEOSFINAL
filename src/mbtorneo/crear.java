@@ -75,12 +75,7 @@ public class crear extends javax.swing.JFrame {
             }
         });
 
-        ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                ImputCNombreKeyTyped(evt);
-
-            }
-        });
+       
         ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombreKeyTyped(evt);
@@ -189,47 +184,7 @@ public class crear extends javax.swing.JFrame {
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
 
-    private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
-        if (a==true)  {
-            switch ( DesplegableCEquipos.getSelectedIndex()){
-                case  0 :
-                    cant=8;
-                    break;
-                case  1 :
-                    cant=16;
-                    break;
-                case  2 :
-                    cant=32; 
-                    break;
-                    
-                
-            }
-            name=ImputCNombre.getText();
-            ArrayList<Equipo> list_equipos = new ArrayList<>();
-            Torneo t=new Torneo(cant,name,list_equipos);
-            new equipos(t,0).setVisible(true);
-            dispose();
-        }// TODO add your handling code here:
-    }//GEN-LAST:event_BotonCrearActionPerformed
-
-    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
-       
-        
-        a=true;
-        
-        
-        
-    }//GEN-LAST:event_ImputCNombreKeyTyped
-
-    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
-        
-        if (a==false){
-            
-            ImputCNombre.setText(null);
-            
-
-        }
-    }//GEN-LAST:event_ImputCNombreMouseClicked
+   
 
 
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
