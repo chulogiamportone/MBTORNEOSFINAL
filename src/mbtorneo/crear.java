@@ -71,11 +71,6 @@ public class crear extends javax.swing.JFrame {
                 ImputCNombreMouseClicked(evt);
             }
         });
-        ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombreActionPerformed(evt);
-            }
-        });
         ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombreKeyTyped(evt);
@@ -174,27 +169,25 @@ public class crear extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
-    private void ImputCNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreActionPerformed
-        
-    }//GEN-LAST:event_ImputCNombreActionPerformed
-
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
         if (a==true)  {
             switch ( DesplegableCEquipos.getSelectedIndex()){
                 case  0 :
                     cant=8;
+                    break;
                 case  1 :
                     cant=16;
+                    break;
                 case  2 :
-                    cant=32;  
+                    cant=32; 
+                    break;
                     
                 
             }
             name=ImputCNombre.getText();
-            System.out.println(cant+"  "+name);
             ArrayList<Equipo> list_equipos = new ArrayList<>();
             Torneo t=new Torneo(cant,name,list_equipos);
-            new equipos(t).setVisible(true);
+            new equipos(t,0).setVisible(true);
             dispose();
         }// TODO add your handling code here:
     }//GEN-LAST:event_BotonCrearActionPerformed
@@ -210,12 +203,12 @@ public class crear extends javax.swing.JFrame {
 
     private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
         
-        
+        if (a==false){
             
             ImputCNombre.setText(null);
-            evt.consume();
+            
 
-        
+        }
     }//GEN-LAST:event_ImputCNombreMouseClicked
 
     /**
