@@ -10,25 +10,19 @@ public class Equipo {
 
 
 
-    private List<String> j;
+    //private List<String> j;
 
     public Equipo() {
 
     }
 
-    public Equipo(String nombre_equipo,Persona Dt) {
-        this.DT = Dt;
+    public Equipo(Persona DT, String nombre_equipo, List<Jugador> l) {
+        this.DT = DT;
         this.nombre_equipo = nombre_equipo;
-        LJugador();
-        cargar_Jugadores();
+        this.list_jugadores = l;
     }
-    public void cargar_Jugadores(){
-        for (int i = 0; i <= 6; i++) {
-            Jugador jug= new Jugador(j.get(i),i);
-            list_jugadores.add(jug);
-        }
 
-    };
+    
 
     public Persona getDT() {
         return DT;
@@ -45,18 +39,40 @@ public class Equipo {
     public void setNombre_equipo(String nombre_equipo) {
         this.nombre_equipo = nombre_equipo;
     }
+    
 
+    //public Equipo(String nombre_equipo,Persona Dt) {
+    //    this.DT = Dt;
+    //    this.nombre_equipo = nombre_equipo;
+    //    LJugador();
+    //    cargar_Jugadores();
+    //}
+    //public void cargar_Jugadores(){
+    //    for (int i = 0; i <= 6; i++) {
+    //        Jugador jug= new Jugador(j.get(i),i);
+    //        list_jugadores.add(jug);
+    //    }
+//
+    //};
+//
+//
+  //  public void LJugador(){
+    //    j=new ArrayList<>();
+    //    j.add("SifonRodriguez");
+    //    j.add("ElMantecaMartinez");
+    //////    j.add("TeclaMontolla");
+    //    j.add("CalecitaGimenez");
+    //  j.add("Marambona");
+     //   j.add("LeonardoMessirve");
+       // j.add("HernanCastolo");
 
+    //}
 
-    public void LJugador(){
-        j=new ArrayList<>();
-        j.add("SifonRodriguez");
-        j.add("ElMantecaMartinez");
-        j.add("TeclaMontolla");
-        j.add("CalecitaGimenez");
-        j.add("Marambona");
-        j.add("LeonardoMessirve");
-        j.add("HernanCastolo");
+    public List<Jugador> getList_jugadores() {
+        return list_jugadores;
+    }
 
+    public void setList_jugadores(List<Jugador> list_jugadores) {
+        this.list_jugadores = list_jugadores;
     }
 }

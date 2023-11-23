@@ -30,6 +30,7 @@ public class llaves extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         LabelCrear = new javax.swing.JLabel();
+
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -53,18 +54,23 @@ public class llaves extends javax.swing.JFrame {
         jSeparator6 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
 
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+
         jPanel1.setMaximumSize(null);
         jPanel1.setMinimumSize(null);
         jPanel1.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.setLayout(null);
 
+
         LabelCrear.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         LabelCrear.setForeground(new java.awt.Color(255, 255, 255));
         LabelCrear.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         LabelCrear.setText("CRUCES");
+
         LabelCrear.setToolTipText("");
         LabelCrear.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         LabelCrear.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -231,19 +237,23 @@ public class llaves extends javax.swing.JFrame {
         jPanel1.add(jSeparator7);
         jSeparator7.setBounds(690, 270, 90, 10);
 
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1050, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
 
     /**
      * @param args the command line arguments
@@ -275,12 +285,13 @@ public class llaves extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new llaves().setVisible(true);
+
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JLabel LabelCrear;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -305,5 +316,6 @@ public class llaves extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
+
     // End of variables declaration//GEN-END:variables
 }

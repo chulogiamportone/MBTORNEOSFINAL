@@ -94,6 +94,7 @@ public class Inicio extends javax.swing.JFrame {
         PanelInicioLayout.setHorizontalGroup(
             PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelInicioLayout.createSequentialGroup()
+
                 .addGap(76, 76, 76)
                 .addGroup(PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
@@ -107,17 +108,20 @@ public class Inicio extends javax.swing.JFrame {
                 .addGap(252, 252, 252)
                 .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(266, 266, 266))
+
         );
         PanelInicioLayout.setVerticalGroup(
             PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelInicioLayout.createSequentialGroup()
                 .addGap(86, 86, 86)
+
                 .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 111, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(LabelInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, Short.MAX_VALUE)
                 .addGap(97, 97, 97)
                 .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(86, 86, 86))
+
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -126,11 +130,13 @@ public class Inicio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
+
                 .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 698, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(PanelInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+
         );
 
         pack();
