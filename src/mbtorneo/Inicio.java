@@ -46,6 +46,7 @@ public class Inicio extends javax.swing.JFrame {
         setTitle("FrameCrear");
         setBackground(new java.awt.Color(0, 0, 204));
         setName("framecrear"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(700, 500));
 
         PanelInicio.setBackground(new java.awt.Color(0, 102, 102));
         PanelInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -65,9 +66,11 @@ public class Inicio extends javax.swing.JFrame {
 
         BotonInicio.setText("INICIAR");
         BotonInicio.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        BotonInicio.setMaximumSize(new java.awt.Dimension(73000, 200003));
+        BotonInicio.setMaximumSize(new java.awt.Dimension(180, 50));
+        BotonInicio.setMinimumSize(new java.awt.Dimension(180, 50));
+        BotonInicio.setName(""); // NOI18N
         BotonInicio.setOpaque(false);
-        BotonInicio.setPreferredSize(new java.awt.Dimension(150, 25));
+        BotonInicio.setPreferredSize(new java.awt.Dimension(180, 50));
         BotonInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonInicioActionPerformed(evt);
@@ -91,29 +94,30 @@ public class Inicio extends javax.swing.JFrame {
         PanelInicioLayout.setHorizontalGroup(
             PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelInicioLayout.createSequentialGroup()
-                .addGap(297, 297, 297)
-                .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(76, 76, 76)
                 .addGroup(PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
-                        .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(145, 145, 145)
+                        .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addGap(239, 239, 239))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInicioLayout.createSequentialGroup()
-                        .addComponent(LabelInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LabelInicio1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(114, 114, 114))))
+            .addGroup(PanelInicioLayout.createSequentialGroup()
+                .addGap(252, 252, 252)
+                .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(266, 266, 266))
         );
         PanelInicioLayout.setVerticalGroup(
             PanelInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelInicioLayout.createSequentialGroup()
                 .addGap(86, 86, 86)
-                .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 111, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(LabelInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90)
-                .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addComponent(LabelInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, Short.MAX_VALUE)
+                .addGap(97, 97, 97)
+                .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(86, 86, 86))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -122,13 +126,11 @@ public class Inicio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE))
+                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 698, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(PanelInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(PanelInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
