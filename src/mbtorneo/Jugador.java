@@ -1,3 +1,4 @@
+package mbtorneo;
 public class Jugador extends Persona{
     private int numero_jugador;
     private int tarjetas_a;

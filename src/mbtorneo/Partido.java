@@ -1,3 +1,4 @@
+package mbtorneo;
 public class Partido {
     private Equipo equipo_1;
     private Equipo equipo_2;

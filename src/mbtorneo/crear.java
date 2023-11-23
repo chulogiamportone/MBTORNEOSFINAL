@@ -5,18 +5,22 @@
  */
 
 package mbtorneo;
-
+import java.util.ArrayList;
+import mbtorneo.Torneo;
 /**
  *
  * @author Juli
  */
 public class crear extends javax.swing.JFrame {
-
-    /**
-     * Creates new form crear
-     */
+    private int cant=8;
+    private String name;
+    
+    boolean a=false;
+   
+    
     public crear() {
         initComponents();
+        setLocationRelativeTo(this);
     }
 
     /**
@@ -39,17 +43,21 @@ public class crear extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         crear.setBackground(new java.awt.Color(0, 102, 102));
-        crear.setPreferredSize(new java.awt.Dimension(1280, 640));
+        crear.setMaximumSize(new java.awt.Dimension(2920000, 4700000));
+        crear.setName(""); // NOI18N
+        crear.setPreferredSize(new java.awt.Dimension(700, 500));
+        crear.setVerifyInputWhenFocusTarget(false);
 
-        LabelCrear.setFont(getFont());
+        LabelCrear.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         LabelCrear.setForeground(new java.awt.Color(255, 255, 255));
         LabelCrear.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCrear.setText("CREA TU TORNEO");
+        LabelCrear.setText("NUEVO TORNEO");
         LabelCrear.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         LabelCrear.setMaximumSize(new java.awt.Dimension(210003, 290000));
         LabelCrear.setPreferredSize(new java.awt.Dimension(480, 100));
 
-        LabelCNombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        LabelCNombre.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
+        LabelCNombre.setForeground(new java.awt.Color(255, 255, 255));
         LabelCNombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelCNombre.setText("NOMBRE");
         LabelCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
@@ -58,13 +66,24 @@ public class crear extends javax.swing.JFrame {
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre.setText("Nombre del torneo");
         ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreMouseClicked(evt);
+            }
+        });
         ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ImputCNombreActionPerformed(evt);
             }
         });
+        ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputCNombreKeyTyped(evt);
+            }
+        });
 
-        LabelCEquipos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        LabelCEquipos.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
+        LabelCEquipos.setForeground(new java.awt.Color(255, 255, 255));
         LabelCEquipos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelCEquipos.setText("CANTIDAD DE EQUIPOS");
         LabelCEquipos.setPreferredSize(new java.awt.Dimension(300, 75));
@@ -79,49 +98,56 @@ public class crear extends javax.swing.JFrame {
             }
         });
 
-        BotonCrear.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        BotonCrear.setText("Crear Torneo");
+        BotonCrear.setText("CREAR TORNEO");
         BotonCrear.setPreferredSize(new java.awt.Dimension(300, 100));
+        BotonCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCrearActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout crearLayout = new javax.swing.GroupLayout(crear);
         crear.setLayout(crearLayout);
         crearLayout.setHorizontalGroup(
             crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BotonCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
             .addGroup(crearLayout.createSequentialGroup()
+                .addGap(109, 109, 109)
                 .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(crearLayout.createSequentialGroup()
-                        .addGap(400, 400, 400)
-                        .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(crearLayout.createSequentialGroup()
-                        .addGap(490, 490, 490)
-                        .addComponent(BotonCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(crearLayout.createSequentialGroup()
-                        .addGap(300, 300, 300)
+                    .addComponent(LabelCrear, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
                         .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LabelCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(80, 80, 80)
+                            .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(91, 91, 91))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
                         .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(DesplegableCEquipos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(300, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
+                                .addComponent(DesplegableCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(92, 92, 92))
+                            .addComponent(LabelCEquipos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(109, 109, 109)))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         crearLayout.setVerticalGroup(
             crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(crearLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addContainerGap()
                 .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
-                .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70)
-                .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(DesplegableCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LabelCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
-                .addComponent(BotonCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(LabelCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DesplegableCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addComponent(BotonCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -129,9 +155,9 @@ public class crear extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
+                .addContainerGap()
                 .addComponent(crear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,8 +175,48 @@ public class crear extends javax.swing.JFrame {
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
     private void ImputCNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_ImputCNombreActionPerformed
+
+    private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
+        if (a==true)  {
+            switch ( DesplegableCEquipos.getSelectedIndex()){
+                case  0 :
+                    cant=8;
+                case  1 :
+                    cant=16;
+                case  2 :
+                    cant=32;  
+                    
+                
+            }
+            name=ImputCNombre.getText();
+            System.out.println(cant+"  "+name);
+            ArrayList<Equipo> list_equipos = new ArrayList<>();
+            Torneo t=new Torneo(cant,name,list_equipos);
+            new equipos(t).setVisible(true);
+            dispose();
+        }// TODO add your handling code here:
+    }//GEN-LAST:event_BotonCrearActionPerformed
+
+    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
+       
+        
+        a=true;
+        
+        
+        
+    }//GEN-LAST:event_ImputCNombreKeyTyped
+
+    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
+        
+        
+            
+            ImputCNombre.setText(null);
+            evt.consume();
+
+        
+    }//GEN-LAST:event_ImputCNombreMouseClicked
 
     /**
      * @param args the command line arguments
@@ -178,11 +244,14 @@ public class crear extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+       
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new crear().setVisible(true);
+                
+                
+                
             }
         });
     }

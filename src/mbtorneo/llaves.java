@@ -6,16 +6,17 @@
 
 package mbtorneo;
 
- 
-public class equipos extends javax.swing.JFrame {
-   
-   
+/**
+ *
+ * @author Juli
+ */
+public class llaves extends javax.swing.JFrame {
+
     /**
      * Creates new form equipos
      */
-    public equipos(Torneo t) {
+    public llaves() {
         initComponents();
-        setLocationRelativeTo(this);
     }
 
     /**
@@ -45,7 +46,6 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombreDT = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 500));
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
@@ -70,14 +70,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre.setText("Nombre del Equipo");
         ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombreActionPerformed(evt);
-            }
-        });
-        ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                ImputCNombreKeyTyped(evt);
+        ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreMouseClicked(evt);
             }
         });
 
@@ -102,14 +97,14 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre1.setText("Jugador 1");
         ImputCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre1MouseClicked(evt);
+            }
+        });
         ImputCNombre1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ImputCNombre1ActionPerformed(evt);
-            }
-        });
-        ImputCNombre1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                ImputCNombre1KeyTyped(evt);
             }
         });
 
@@ -117,14 +112,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre2.setText("Jugador 2");
         ImputCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre2ActionPerformed(evt);
-            }
-        });
-        ImputCNombre2.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                ImputCNombre2KeyTyped(evt);
+        ImputCNombre2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre2MouseClicked(evt);
             }
         });
 
@@ -132,9 +122,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre3.setText("Jugador 3");
         ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre3ActionPerformed(evt);
+        ImputCNombre3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre3MouseClicked(evt);
             }
         });
 
@@ -142,9 +132,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre4.setText("Jugador 4");
         ImputCNombre4.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre4ActionPerformed(evt);
+        ImputCNombre4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre4MouseClicked(evt);
             }
         });
 
@@ -152,9 +142,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre5.setText("Jugador 5");
         ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre5ActionPerformed(evt);
+        ImputCNombre5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre5MouseClicked(evt);
             }
         });
 
@@ -162,9 +152,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre6.setText("Jugador 6");
         ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre6ActionPerformed(evt);
+        ImputCNombre6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre6MouseClicked(evt);
             }
         });
 
@@ -172,9 +162,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre7.setText("Jugador 7");
         ImputCNombre7.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre7ActionPerformed(evt);
+        ImputCNombre7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre7MouseClicked(evt);
             }
         });
 
@@ -182,9 +172,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombre8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre8.setText("Jugador 8");
         ImputCNombre8.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre8ActionPerformed(evt);
+        ImputCNombre8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombre8MouseClicked(evt);
             }
         });
 
@@ -200,9 +190,9 @@ public class equipos extends javax.swing.JFrame {
         ImputCNombreDT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombreDT.setText("Nombre DT");
         ImputCNombreDT.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombreDT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombreDTActionPerformed(evt);
+        ImputCNombreDT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreDTMouseClicked(evt);
             }
         });
 
@@ -312,62 +302,54 @@ public class equipos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ImputCNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreActionPerformed
-
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
         new crear().setVisible(true);
 
     }//GEN-LAST:event_BotonInicioActionPerformed
 
-    private void ImputCNombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre2ActionPerformed
+    private void ImputCNombre1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre2ActionPerformed
+    }//GEN-LAST:event_ImputCNombre1MouseClicked
+
+    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombreMouseClicked
+
+    private void ImputCNombre2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre2MouseClicked
+
+    private void ImputCNombre3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre3MouseClicked
+
+    private void ImputCNombre4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre4MouseClicked
+
+    private void ImputCNombre5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre5MouseClicked
+
+    private void ImputCNombre6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre6MouseClicked
+
+    private void ImputCNombre7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre7MouseClicked
+
+    private void ImputCNombre8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombre8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre8MouseClicked
+
+    private void ImputCNombreDTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreDTMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombreDTMouseClicked
 
     private void ImputCNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ImputCNombre1ActionPerformed
-
-    private void ImputCNombre4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre4ActionPerformed
-
-    private void ImputCNombre3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre3ActionPerformed
-
-    private void ImputCNombre5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre5ActionPerformed
-
-    private void ImputCNombre6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre6ActionPerformed
-
-    private void ImputCNombre7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre7ActionPerformed
-
-    private void ImputCNombre8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre8ActionPerformed
-
-    private void ImputCNombreDTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreDTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreDTActionPerformed
-
-    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreKeyTyped
-
-    private void ImputCNombre1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombre1KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre1KeyTyped
-
-    private void ImputCNombre2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombre2KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre2KeyTyped
 
     /**
      * @param args the command line arguments
@@ -386,21 +368,20 @@ public class equipos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(equipos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(equipos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(equipos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(equipos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
-               
+                new llaves().setVisible(true);
             }
         });
     }
