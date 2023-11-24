@@ -3,21 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package mbtorneo;
+
 import java.util.ArrayList;
 import mbtorneo.Torneo;
+
 /**
  *
  * @author Juli
  */
 public class crear extends javax.swing.JFrame {
-    private int cant=8;
+
+    private int cant = 8;
     private String name;
-    
-    boolean a=false;
-   
-    
+
+    boolean a = false;
+
     public crear() {
         initComponents();
         setLocationRelativeTo(this);
@@ -67,6 +68,16 @@ public class crear extends javax.swing.JFrame {
         ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputCNombre.setText("Nombre del torneo");
         ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputCNombreMouseClicked(evt);
+            }
+        });
+        ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputCNombreKeyTyped(evt);
+            }
+        });
 
         LabelCEquipos.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
         LabelCEquipos.setForeground(new java.awt.Color(255, 255, 255));
@@ -88,6 +99,11 @@ public class crear extends javax.swing.JFrame {
         BotonCrear.setMaximumSize(new java.awt.Dimension(180, 50));
         BotonCrear.setMinimumSize(new java.awt.Dimension(180, 50));
         BotonCrear.setPreferredSize(new java.awt.Dimension(300, 100));
+        BotonCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCrearActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout crearLayout = new javax.swing.GroupLayout(crear);
         crear.setLayout(crearLayout);
@@ -156,49 +172,40 @@ public class crear extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
+    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
+        a = true;
+    }//GEN-LAST:event_ImputCNombreKeyTyped
 
-    private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        if (a==true)  {
-            switch ( DesplegableCEquipos.getSelectedIndex()){
-                case  0 :
-                    cant=8;
-                    break;
-                case  1 :
-                    cant=16;
-                    break;
-                case  2 :
-                    cant=32; 
-                    break;
-                    
-                
-            }
-            name=ImputCNombre.getText();
-            ArrayList<Equipo> list_equipos = new ArrayList<>();
-            Torneo t=new Torneo(cant,name,list_equipos);
-            new equipos(t,0).setVisible(true);
-            dispose();
-        }// TODO add your handling code here:
-    }                                          
-
-    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {                                      
-       
-        
-        a=true;
-        
-        
-        
-    }                                     
-
-    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {                                          
-        
+    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
         if (a==false){
             
             ImputCNombre.setText(null);
             
 
         }
-    }                                         
+    }//GEN-LAST:event_ImputCNombreMouseClicked
 
+    private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
+        if (a == true) {
+            switch (DesplegableCEquipos.getSelectedIndex()) {
+                case 0:
+                    cant = 8;
+                    break;
+                case 1:
+                    cant = 16;
+                    break;
+                case 2:
+                    cant = 32;
+                    break;
+
+            }
+            name = ImputCNombre.getText();
+            ArrayList<Equipo> list_equipos = new ArrayList<>();
+            Torneo t = new Torneo(cant, name, list_equipos);
+            new equipos(t, 0).setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_BotonCrearActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,14 +233,11 @@ public class crear extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-       
-        
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
-                
-                
+
             }
         });
     }
