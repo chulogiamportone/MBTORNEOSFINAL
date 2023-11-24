@@ -73,11 +73,6 @@ public class crear extends javax.swing.JFrame {
                 ImputCNombreMouseClicked(evt);
             }
         });
-<<<<<<< HEAD
-=======
-
-       
->>>>>>> origin
         ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombreKeyTyped(evt);
@@ -178,22 +173,22 @@ public class crear extends javax.swing.JFrame {
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
 
-    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
-        a = true;
-    }//GEN-LAST:event_ImputCNombreKeyTyped
-
     private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
         if (a==false){
             
             ImputCNombre.setText(null);
-            
+            System.out.println("clicl");
+                  
 
         }
     }//GEN-LAST:event_ImputCNombreMouseClicked
 
 
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
+        System.out.println("lala");
+        System.out.println(a);
         if (a == true) {
+            System.out.println("po");
             switch (DesplegableCEquipos.getSelectedIndex()) {
                 case 0:
                     cant = 8;
@@ -213,6 +208,11 @@ public class crear extends javax.swing.JFrame {
             dispose();
         }
     }//GEN-LAST:event_BotonCrearActionPerformed
+
+    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
+        a = true;
+        System.out.println("entre");
+    }//GEN-LAST:event_ImputCNombreKeyTyped
 
     /**
      * @param args the command line arguments
