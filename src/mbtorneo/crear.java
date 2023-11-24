@@ -3,21 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package mbtorneo;
+
 import java.util.ArrayList;
 import mbtorneo.Torneo;
+
 /**
  *
  * @author Juli
  */
 public class crear extends javax.swing.JFrame {
-    private int cant=8;
+
+    private int cant = 8;
     private String name;
-    
-    boolean a=false;
-   
-    
+
+    boolean a = false;
+
     public crear() {
         initComponents();
         setLocationRelativeTo(this);
@@ -44,9 +45,7 @@ public class crear extends javax.swing.JFrame {
 
         crear.setBackground(new java.awt.Color(0, 102, 102));
         crear.setMaximumSize(new java.awt.Dimension(2920000, 4700000));
-
         crear.setMinimumSize(new java.awt.Dimension(700, 500));
-
         crear.setName(""); // NOI18N
         crear.setPreferredSize(new java.awt.Dimension(700, 500));
         crear.setVerifyInputWhenFocusTarget(false);
@@ -74,13 +73,6 @@ public class crear extends javax.swing.JFrame {
                 ImputCNombreMouseClicked(evt);
             }
         });
-
-        ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                ImputCNombreKeyTyped(evt);
-
-            }
-        });
         ImputCNombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 ImputCNombreKeyTyped(evt);
@@ -104,10 +96,8 @@ public class crear extends javax.swing.JFrame {
         });
 
         BotonCrear.setText("CREAR TORNEO");
-
         BotonCrear.setMaximumSize(new java.awt.Dimension(180, 50));
         BotonCrear.setMinimumSize(new java.awt.Dimension(180, 50));
-
         BotonCrear.setPreferredSize(new java.awt.Dimension(300, 100));
         BotonCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,7 +116,6 @@ public class crear extends javax.swing.JFrame {
             .addGroup(crearLayout.createSequentialGroup()
                 .addGap(109, 109, 109)
                 .addGroup(crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-
                     .addComponent(LabelCrear, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, crearLayout.createSequentialGroup()
                         .addGap(89, 89, 89)
@@ -144,13 +133,11 @@ public class crear extends javax.swing.JFrame {
                             .addComponent(LabelCEquipos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                         .addGap(109, 109, 109)))
                 .addGap(111, 111, 111))
-
         );
         crearLayout.setVerticalGroup(
             crearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(crearLayout.createSequentialGroup()
                 .addContainerGap()
-
                 .addComponent(LabelCrear, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
                 .addGap(27, 27, 27)
                 .addComponent(LabelCNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
@@ -162,7 +149,6 @@ public class crear extends javax.swing.JFrame {
                 .addComponent(DesplegableCEquipos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(BotonCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-
                 .addGap(20, 20, 20))
         );
 
@@ -171,10 +157,8 @@ public class crear extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-
                 .addGap(0, 0, 0)
                 .addComponent(crear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,88 +173,46 @@ public class crear extends javax.swing.JFrame {
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
 
-    private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
-        if (a==true)  {
-            switch ( DesplegableCEquipos.getSelectedIndex()){
-                case  0 :
-                    cant=8;
-                    break;
-                case  1 :
-                    cant=16;
-                    break;
-                case  2 :
-                    cant=32; 
-                    break;
-                    
-                
-            }
-            name=ImputCNombre.getText();
-            ArrayList<Equipo> list_equipos = new ArrayList<>();
-            Torneo t=new Torneo(cant,name,list_equipos);
-            new equipos(t,0).setVisible(true);
-            dispose();
-        }// TODO add your handling code here:
-    }//GEN-LAST:event_BotonCrearActionPerformed
-
-    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
-       
-        
-        a=true;
-        
-        
-        
-    }//GEN-LAST:event_ImputCNombreKeyTyped
-
     private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
-        
         if (a==false){
             
             ImputCNombre.setText(null);
-            
+            System.out.println("clicl");
+                  
 
         }
     }//GEN-LAST:event_ImputCNombreMouseClicked
 
 
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
-        if (a==true)  {
-            switch ( DesplegableCEquipos.getSelectedIndex()){
-                case  0 :
-                    cant=8;
-                case  1 :
-                    cant=16;
-                case  2 :
-                    cant=32;  
-                    
-                
+        System.out.println("lala");
+        System.out.println(a);
+        if (a == true) {
+            System.out.println("po");
+            switch (DesplegableCEquipos.getSelectedIndex()) {
+                case 0:
+                    cant = 8;
+                    break;
+                case 1:
+                    cant = 16;
+                    break;
+                case 2:
+                    cant = 32;
+                    break;
+
             }
-            name=ImputCNombre.getText();
-            System.out.println(cant+"  "+name);
+            name = ImputCNombre.getText();
             ArrayList<Equipo> list_equipos = new ArrayList<>();
-            Torneo t=new Torneo(cant,name,list_equipos);
-            new equipos(t).setVisible(true);
+            Torneo t = new Torneo(cant, name, list_equipos);
+            new equipos(t, 0).setVisible(true);
             dispose();
-        }// TODO add your handling code here:
+        }
     }//GEN-LAST:event_BotonCrearActionPerformed
 
     private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
-       
-        
-        a=true;
-        
-        
-        
+        a = true;
+        System.out.println("entre");
     }//GEN-LAST:event_ImputCNombreKeyTyped
-
-    private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
-        
-        
-            
-            ImputCNombre.setText(null);
-            evt.consume();
-
-        
-    }//GEN-LAST:event_ImputCNombreMouseClicked
 
     /**
      * @param args the command line arguments
@@ -298,14 +240,11 @@ public class crear extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(crear.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-       
-        
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
-                
-                
+
             }
         });
     }
