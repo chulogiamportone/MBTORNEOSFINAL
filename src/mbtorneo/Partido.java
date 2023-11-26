@@ -4,13 +4,34 @@ public class Partido {
     private Equipo equipo_2;
     private int gole1;
     private int gole2;
-
-
+    private int penales1;
+    private int penales2;
+    private Equipo ganador;
+    
+    
     public Partido(Equipo equipo_1, Equipo quipo_2) {
         this.equipo_1 = equipo_1;
         this.equipo_2 = quipo_2;
     }
 
+   
+    public int getPenales1() {
+        return penales1;
+    }
+
+    public void setPenales1(int penales1) {
+        this.penales1 = penales1;
+    }
+
+    public int getPenales2() {
+        return penales2;
+    }
+
+    public void setPenales2(int penales2) {
+        this.penales2 = penales2;
+    }
+
+   
     public Equipo getEquipo_1() {
         return equipo_1;
     }
@@ -41,6 +62,14 @@ public class Partido {
 
     public void setGole2(int gole2) {
         this.gole2 = gole2;
+    }
+
+    public Equipo getGanador() {
+        return ganador;
+    }
+
+    public void setGanador(Equipo ganador) {
+        this.ganador = ganador;
     }
 
     public void ImprimirPartido(int n){

@@ -14,7 +14,7 @@ import mbtorneo.Torneo;
  */
 public class crear extends javax.swing.JFrame {
 
-    private int cant = 8;
+    private int cant = 4;
     private String name;
 
     boolean a = false;
@@ -86,7 +86,8 @@ public class crear extends javax.swing.JFrame {
         LabelCEquipos.setPreferredSize(new java.awt.Dimension(300, 75));
 
         DesplegableCEquipos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        DesplegableCEquipos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "8", "16", "32" }));
+        DesplegableCEquipos.setMaximumRowCount(4);
+        DesplegableCEquipos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "4", "8", "16*" }));
         DesplegableCEquipos.setToolTipText("");
         DesplegableCEquipos.setPreferredSize(new java.awt.Dimension(300, 75));
         DesplegableCEquipos.addActionListener(new java.awt.event.ActionListener() {
@@ -172,32 +173,31 @@ public class crear extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DesplegableCEquiposActionPerformed
 
+    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
+        a = true;
+    }//GEN-LAST:event_ImputCNombreKeyTyped
 
     private void ImputCNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputCNombreMouseClicked
         if (a==false){
             
             ImputCNombre.setText(null);
-            System.out.println("clicl");
                   
 
         }
     }//GEN-LAST:event_ImputCNombreMouseClicked
 
-
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
-        System.out.println("lala");
         System.out.println(a);
         if (a == true) {
-            System.out.println("po");
             switch (DesplegableCEquipos.getSelectedIndex()) {
                 case 0:
-                    cant = 8;
+                    cant = 4;
                     break;
                 case 1:
-                    cant = 16;
+                    cant = 8;
                     break;
                 case 2:
-                    cant = 32;
+                    cant = 16;
                     break;
 
             }
@@ -209,10 +209,7 @@ public class crear extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BotonCrearActionPerformed
 
-    private void ImputCNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputCNombreKeyTyped
-        a = true;
-        System.out.println("entre");
-    }//GEN-LAST:event_ImputCNombreKeyTyped
+
 
     /**
      * @param args the command line arguments
