@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package mbtorneo;
 
 /**
@@ -12,11 +11,31 @@ package mbtorneo;
  */
 public class partidos extends javax.swing.JFrame {
 
-    /**
-     * Creates new form equipos
-     */
-    public partidos() {
+    Torneo t1;
+    int i1;
+
+    public partidos(Torneo t, int i) {
         initComponents();
+        t1 = t;
+        i1 = i;
+        switch (i1) {
+            case 0:
+                LabelPartido.setText("Semifinal 1");
+                jLabel1.setText(t1.getList_partidos().get(0).getEquipo_1().getNombre_equipo());
+                jLabel2.setText(t1.getList_partidos().get(0).getEquipo_2().getNombre_equipo());
+                break;
+            case 1:
+                LabelPartido.setText("Semifinal 2");
+                jLabel1.setText(t1.getList_partidos().get(1).getEquipo_1().getNombre_equipo());
+                jLabel2.setText(t1.getList_partidos().get(1).getEquipo_2().getNombre_equipo());
+                break;
+            case 2:
+                LabelPartido.setText("GRAN FINAL");
+                jLabel1.setText(t1.getList_partidos().get(2).getEquipo_1().getNombre_equipo());
+                jLabel2.setText(t1.getList_partidos().get(2).getEquipo_2().getNombre_equipo());
+                break;
+
+        }
     }
 
     /**
@@ -28,361 +47,128 @@ public class partidos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ImputCNombre5 = new javax.swing.JTextField();
-        ImputCNombre6 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        LabelCrear = new javax.swing.JLabel();
-        LabelCNombre = new javax.swing.JLabel();
-        ImputCNombre = new javax.swing.JTextField();
-        BotonInicio = new javax.swing.JButton();
-        LabelCNombre1 = new javax.swing.JLabel();
-        ImputCNombre1 = new javax.swing.JTextField();
-
-        ImputCNombre2 = new javax.swing.JTextField();
-        ImputCNombre3 = new javax.swing.JTextField();
-        ImputCNombre4 = new javax.swing.JTextField();
-        ImputCNombre7 = new javax.swing.JTextField();
-        ImputCNombre8 = new javax.swing.JTextField();
-        ImputCNombre9 = new javax.swing.JTextField();
-        ImputCNombre10 = new javax.swing.JTextField();
-
-        LabelCNombre2 = new javax.swing.JLabel();
-        ImputCNombre11 = new javax.swing.JTextField();
-
-        ImputCNombre5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre5.setText("Nombre del Equipo");
-        ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre5ActionPerformed(evt);
-            }
-        });
-
-        ImputCNombre6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre6.setText("Nombre del Equipo");
-        ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre6ActionPerformed(evt);
-            }
-        });
+        LabelPartido = new javax.swing.JLabel();
+        BotonPartido = new javax.swing.JButton();
+        ImputPGoles1 = new javax.swing.JTextField();
+        ImputPGoles2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
 
-        jPanel1.setLayout(null);
+        LabelPartido.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
+        LabelPartido.setForeground(new java.awt.Color(255, 255, 255));
+        LabelPartido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelPartido.setText("NUEVO EQUIPO");
+        LabelPartido.setToolTipText("");
+        LabelPartido.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        LabelPartido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        LabelPartido.setMaximumSize(new java.awt.Dimension(210003, 290000));
+        LabelPartido.setPreferredSize(new java.awt.Dimension(480, 100));
 
-
-        LabelCrear.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
-        LabelCrear.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCrear.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCrear.setText("NUEVO EQUIPO");
-        LabelCrear.setToolTipText("");
-        LabelCrear.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        LabelCrear.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        LabelCrear.setMaximumSize(new java.awt.Dimension(210003, 290000));
-        LabelCrear.setPreferredSize(new java.awt.Dimension(480, 100));
-
-        jPanel1.add(LabelCrear);
-        LabelCrear.setBounds(120, 70, 480, 100);
-
-
-        LabelCNombre.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
-        LabelCNombre.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCNombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCNombre.setText("NOMBRE");
-        LabelCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
-
-        jPanel1.add(LabelCNombre);
-        LabelCNombre.setBounds(47, 110, 300, 75);
-
-
-        ImputCNombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre.setText("Nombre del Equipo");
-        ImputCNombre.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre.addActionListener(new java.awt.event.ActionListener() {
+        BotonPartido.setText("SIGUIENTE");
+        BotonPartido.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        BotonPartido.setMaximumSize(new java.awt.Dimension(73000, 200003));
+        BotonPartido.setOpaque(false);
+        BotonPartido.setPreferredSize(new java.awt.Dimension(150, 25));
+        BotonPartido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombreActionPerformed(evt);
+                BotonPartidoActionPerformed(evt);
             }
         });
 
-        jPanel1.add(ImputCNombre);
-        ImputCNombre.setBounds(352, 110, 300, 75);
+        ImputPGoles1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputPGoles1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputPGoles1.setText("GOLES");
+        ImputPGoles1.setPreferredSize(new java.awt.Dimension(300, 75));
 
-
-        BotonInicio.setText("SIGUIENTE");
-        BotonInicio.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        BotonInicio.setMaximumSize(new java.awt.Dimension(73000, 200003));
-        BotonInicio.setOpaque(false);
-        BotonInicio.setPreferredSize(new java.awt.Dimension(150, 25));
-        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonInicioActionPerformed(evt);
+        ImputPGoles2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputPGoles2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputPGoles2.setText("GOLES");
+        ImputPGoles2.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputPGoles2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputPGoles2MouseClicked(evt);
+            }
+        });
+        ImputPGoles2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputPGoles2KeyTyped(evt);
             }
         });
 
-        jPanel1.add(BotonInicio);
-        BotonInicio.setBounds(122, 215, 150, 25);
-
-
-        LabelCNombre1.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
-        LabelCNombre1.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCNombre1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCNombre1.setText("JUGADORES");
-        LabelCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
-
-        jPanel1.add(LabelCNombre1);
-        LabelCNombre1.setBounds(277, 190, 300, 75);
-
-
-        ImputCNombre1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre1.setText("Jugador 2");
-        ImputCNombre1.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre1ActionPerformed(evt);
+        jLabel1.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("jLabel2");
+        jLabel1.setMaximumSize(null);
+        jLabel1.setMinimumSize(null);
+        jLabel1.setPreferredSize(new java.awt.Dimension(150, 45));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jLabel1KeyTyped(evt);
             }
         });
 
-        jPanel1.add(ImputCNombre1);
-        ImputCNombre1.setBounds(47, 270, 300, 75);
-
-        ImputCNombre3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre3.setText("Jugador 4");
-        ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ImputCNombre3);
-        ImputCNombre3.setBounds(352, 270, 300, 75);
-
-
-        ImputCNombre2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre2.setText("Jugador 1");
-        ImputCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre2ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.add(ImputCNombre2);
-        ImputCNombre2.setBounds(47, 350, 300, 75);
-
-
-        ImputCNombre3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre3.setText("Jugador 4");
-        ImputCNombre3.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre3ActionPerformed(evt);
-            }
-        });
-
-
-        ImputCNombre4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre4.setText("Jugador 3");
-        ImputCNombre4.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre4ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.add(ImputCNombre4);
-        ImputCNombre4.setBounds(352, 350, 300, 75);
-
-
-        ImputCNombre7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre7.setText("Jugador 5");
-        ImputCNombre7.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre7ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.add(ImputCNombre7);
-        ImputCNombre7.setBounds(47, 430, 300, 75);
-
-
-        ImputCNombre8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre8.setText("Jugador 6");
-        ImputCNombre8.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre8ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.add(ImputCNombre8);
-        ImputCNombre8.setBounds(352, 430, 300, 75);
-
-        ImputCNombre10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre10.setText("Jugador 8");
-        ImputCNombre10.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre10ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ImputCNombre10);
-        ImputCNombre10.setBounds(47, 510, 300, 75);
-
-
-        ImputCNombre9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre9.setText("Jugador 7");
-        ImputCNombre9.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre9ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.add(ImputCNombre9);
-        ImputCNombre9.setBounds(352, 510, 300, 75);
-
-
-        ImputCNombre10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre10.setText("Jugador 8");
-        ImputCNombre10.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre10ActionPerformed(evt);
-            }
-        });
-
-
-        LabelCNombre2.setFont(new java.awt.Font("Twitchy.TV", 0, 18)); // NOI18N
-        LabelCNombre2.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCNombre2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        LabelCNombre2.setText("DIRECTOR técnico");
-        LabelCNombre2.setToolTipText("");
-        LabelCNombre2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        LabelCNombre2.setPreferredSize(new java.awt.Dimension(300, 75));
-        jPanel1.add(LabelCNombre2);
-        LabelCNombre2.setBounds(47, 590, 300, 75);
-
-
-        ImputCNombre11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre11.setText("Nombre DT");
-        ImputCNombre11.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre11ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.add(ImputCNombre11);
-        ImputCNombre11.setBounds(352, 590, 300, 75);
-
+        jLabel2.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("jLabel2");
+        jLabel2.setMaximumSize(null);
+        jLabel2.setMinimumSize(null);
+        jLabel2.setPreferredSize(new java.awt.Dimension(150, 45));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(46, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(93, 93, 93))
-                            .addComponent(ImputCNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(193, 193, 193))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(103, 103, 103))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(275, 275, 275))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(44, 44, 44)))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(349, 349, 349))))
-                            .addContainerGap())
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(ImputCNombre11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(22, 22, 22)))))
+                        .addComponent(BotonPartido, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(LabelPartido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(103, 103, 103))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(ImputPGoles1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ImputPGoles2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(LabelCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ImputCNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(LabelCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelPartido, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addComponent(LabelCNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ImputCNombre11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                    .addComponent(ImputPGoles1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputPGoles2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(134, 134, 134)
+                .addComponent(BotonPartido, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
         );
-
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -403,58 +189,99 @@ public class partidos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ImputCNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombreActionPerformed
+    private void BotonPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPartidoActionPerformed
+        String g1 = ImputPGoles1.getText();
+        String g2 = ImputPGoles2.getText();
+
+        if (g1.matches("-?\\d+") && g2.matches("-?\\d+")) {
+            if (g1 == g2) {
+                switch (i1) {
+                    case 0:
+                        t1.getList_partidos().get(0).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(0).setGole2(Integer.parseInt(g2));
+                        new partidosP(t1, i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 1:
+                        t1.getList_partidos().get(1).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(1).setGole2(Integer.parseInt(g2));
+                        new partidosP(t1, i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 2:
+                        t1.getList_partidos().get(2).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(2).setGole2(Integer.parseInt(g2));
+                        new partidosP(t1, i1).setVisible(true);
+                        dispose();
+                        break;
+
+                }
+
+            } else {
+                switch (i1) {
+                    case 0:
+                        t1.getList_partidos().get(0).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(0).setGole2(Integer.parseInt(g2));
+                        i1=i1+1;
+                        if(t1.getList_partidos().get(0).getGole1()>t1.getList_partidos().get(0).getGole2()){
+                            t1.getList_partidos().get(0).setGanador(t1.getList_partidos().get(0).getEquipo_1());
+                            
+                        }else{
+                            t1.getList_partidos().get(0).setGanador(t1.getList_partidos().get(0).getEquipo_2());
+                        }
+                        new llaves(t1,i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 1:
+                        t1.getList_partidos().get(1).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(1).setGole2(Integer.parseInt(g2));
+                        i1=i1+1;
+                        if(t1.getList_partidos().get(1).getGole1()>t1.getList_partidos().get(1).getGole2()){
+                            t1.getList_partidos().get(1).setGanador(t1.getList_partidos().get(1).getEquipo_1());
+                            
+                        }else{
+                            t1.getList_partidos().get(1).setGanador(t1.getList_partidos().get(1).getEquipo_2());
+                        }
+                        new llaves(t1,i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 2:
+                        t1.getList_partidos().get(2).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(2).setGole2(Integer.parseInt(g2));
+                        i1=i1+1;
+                        if(t1.getList_partidos().get(2).getGole1()>t1.getList_partidos().get(2).getGole2()){
+                            t1.getList_partidos().get(2).setGanador(t1.getList_partidos().get(2).getEquipo_1());
+                            
+                        }else{
+                            t1.getList_partidos().get(2).setGanador(t1.getList_partidos().get(2).getEquipo_2());
+                        }
+                        new llaves(t1,i1).setVisible(true);
+                        dispose();
+                        break;
+
+                }
+            }
+
+        }
+
+
+    }//GEN-LAST:event_BotonPartidoActionPerformed
+
+    private void jLabel1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombreActionPerformed
+    }//GEN-LAST:event_jLabel1KeyTyped
 
-    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        new crear().setVisible(true);
-
-    }//GEN-LAST:event_BotonInicioActionPerformed
-
-    private void ImputCNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre1ActionPerformed
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre1ActionPerformed
+    }//GEN-LAST:event_jLabel1MouseClicked
 
-    private void ImputCNombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre2ActionPerformed
+    private void ImputPGoles2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputPGoles2KeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre2ActionPerformed
+    }//GEN-LAST:event_ImputPGoles2KeyTyped
 
-    private void ImputCNombre3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre3ActionPerformed
+    private void ImputPGoles2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputPGoles2MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre3ActionPerformed
-
-    private void ImputCNombre4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre4ActionPerformed
-
-    private void ImputCNombre5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre5ActionPerformed
-
-    private void ImputCNombre6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre6ActionPerformed
-
-    private void ImputCNombre7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre7ActionPerformed
-
-    private void ImputCNombre8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre8ActionPerformed
-
-    private void ImputCNombre9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre9ActionPerformed
-
-    private void ImputCNombre10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre10ActionPerformed
-
-    private void ImputCNombre11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre11ActionPerformed
+    }//GEN-LAST:event_ImputPGoles2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -486,29 +313,18 @@ public class partidos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new partidos().setVisible(true);
+
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonInicio;
-    private javax.swing.JTextField ImputCNombre;
-    private javax.swing.JTextField ImputCNombre1;
-    private javax.swing.JTextField ImputCNombre10;
-    private javax.swing.JTextField ImputCNombre11;
-    private javax.swing.JTextField ImputCNombre2;
-    private javax.swing.JTextField ImputCNombre3;
-    private javax.swing.JTextField ImputCNombre4;
-    private javax.swing.JTextField ImputCNombre5;
-    private javax.swing.JTextField ImputCNombre6;
-    private javax.swing.JTextField ImputCNombre7;
-    private javax.swing.JTextField ImputCNombre8;
-    private javax.swing.JTextField ImputCNombre9;
-    private javax.swing.JLabel LabelCNombre;
-    private javax.swing.JLabel LabelCNombre1;
-    private javax.swing.JLabel LabelCNombre2;
-    private javax.swing.JLabel LabelCrear;
+    private javax.swing.JButton BotonPartido;
+    private javax.swing.JTextField ImputPGoles1;
+    private javax.swing.JTextField ImputPGoles2;
+    private javax.swing.JLabel LabelPartido;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

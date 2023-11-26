@@ -8,11 +8,14 @@ public class Torneo {
     private int cant_equipos;
     private String nombre_id;
     private ArrayList<Equipo> list_equipos = new ArrayList<>();
-
+    private ArrayList<Partido> list_partidos = new ArrayList<>();
+    
     public Torneo(int cant_equipos, String nombre_id, ArrayList<Equipo> list_equipos) {
         this.cant_equipos = cant_equipos;
         this.nombre_id = nombre_id;
         this.list_equipos = list_equipos;
+        ArrayList<Partido> list_partidos = new ArrayList<>();
+        this.list_partidos=list_partidos;
     }
 
     public int getCant_equipos() {
@@ -37,6 +40,14 @@ public class Torneo {
 
     public void setList_equipos(ArrayList<Equipo> list_equipos) {
         this.list_equipos = list_equipos;
+    }
+
+    public ArrayList<Partido> getList_partidos() {
+        return list_partidos;
+    }
+
+    public void setList_partidos(ArrayList<Partido> list_partidos) {
+        this.list_partidos = list_partidos;
     }
 
 }
