@@ -10,12 +10,12 @@ package mbtorneo;
  *
  * @author Juli
  */
-public class partidos extends javax.swing.JFrame {
+public class partidosP extends javax.swing.JFrame {
 
     /**
      * Creates new form equipos
      */
-    public partidos(Torneo t,int i) {
+    public partidosP() {
         initComponents();
     }
 
@@ -37,6 +37,8 @@ public class partidos extends javax.swing.JFrame {
         ImputCNombre4 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        ImputCNombre13 = new javax.swing.JTextField();
+        ImputCNombre14 = new javax.swing.JTextField();
 
         ImputCNombre5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -120,6 +122,26 @@ public class partidos extends javax.swing.JFrame {
         jLabel3.setMinimumSize(null);
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 45));
 
+        ImputCNombre13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombre13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombre13.setText("PENALES");
+        ImputCNombre13.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImputCNombre13ActionPerformed(evt);
+            }
+        });
+
+        ImputCNombre14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputCNombre14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputCNombre14.setText("PENALES");
+        ImputCNombre14.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputCNombre14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImputCNombre14ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -141,9 +163,13 @@ public class partidos extends javax.swing.JFrame {
                 .addGap(61, 61, 61))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addComponent(ImputCNombre12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ImputCNombre12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombre14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ImputCNombre13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -158,7 +184,11 @@ public class partidos extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ImputCNombre12, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(134, 134, 134)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ImputCNombre13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputCNombre14, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(86, 86, 86)
                 .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43))
         );
@@ -202,6 +232,14 @@ public class partidos extends javax.swing.JFrame {
         new crear().setVisible(true);
     }//GEN-LAST:event_BotonInicioActionPerformed
 
+    private void ImputCNombre13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre13ActionPerformed
+
+    private void ImputCNombre14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputCNombre14ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -219,20 +257,20 @@ public class partidos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidosP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidosP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidosP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidosP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-               
+                new partidosP().setVisible(true);
             }
         });
     }
@@ -240,6 +278,8 @@ public class partidos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonInicio;
     private javax.swing.JTextField ImputCNombre12;
+    private javax.swing.JTextField ImputCNombre13;
+    private javax.swing.JTextField ImputCNombre14;
     private javax.swing.JTextField ImputCNombre4;
     private javax.swing.JTextField ImputCNombre5;
     private javax.swing.JTextField ImputCNombre6;
