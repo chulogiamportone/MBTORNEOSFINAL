@@ -187,7 +187,6 @@ public class crear extends javax.swing.JFrame {
     }//GEN-LAST:event_ImputCNombreMouseClicked
 
     private void BotonCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCrearActionPerformed
-        System.out.println(a);
         if (a == true) {
             switch (DesplegableCEquipos.getSelectedIndex()) {
                 case 0:

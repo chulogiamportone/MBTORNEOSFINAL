@@ -15,7 +15,7 @@ public class partidosP extends javax.swing.JFrame {
     /**
      * Creates new form equipos
      */
-    public partidosP() {
+    public partidosP(Torneo t,int i) {
         initComponents();
     }
 
@@ -270,7 +270,7 @@ public class partidosP extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new partidosP().setVisible(true);
+                
             }
         });
     }

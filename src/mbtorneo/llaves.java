@@ -5,6 +5,7 @@
  */
 package mbtorneo;
 
+
 import javax.swing.JLabel;
 
 /**
@@ -34,6 +35,21 @@ public class llaves extends javax.swing.JFrame {
             jLabel12.setText(null);
             jLabel13.setText(null);
             jLabel14.setText(null);
+            switch (i1) {
+                case 1:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    break;
+                case 2:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    break;
+                case 3:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    jLabel7.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
+                    break;
+
+            }
         }
         if (t.getCant_equipos() == 8) {
             jLabel1.setText(t.getList_equipos().get(0).getNombre_equipo());
@@ -286,37 +302,32 @@ public class llaves extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (t1.getCant_equipos() == 4) {
-            jLabel1.setText(t1.getList_equipos().get(0).getNombre_equipo());
-            jLabel2.setText(t1.getList_equipos().get(1).getNombre_equipo());
-            jLabel3.setText(t1.getList_equipos().get(2).getNombre_equipo());
-            jLabel4.setText(t1.getList_equipos().get(3).getNombre_equipo());
-            jLabel5.setText(null);
-            jLabel6.setText(null);
-            jLabel7.setText(null);
-            jLabel8.setText(null);
-            jLabel9.setText(null);
-            jLabel10.setText(null);
-            jLabel11.setText(null);
-            jLabel12.setText(null);
-            jLabel13.setText(null);
-            jLabel14.setText(null);
+           switch (i1) {
+                case 0:
+                    Partido p =new Partido(t1.getList_equipos().get(0),t1.getList_equipos().get(1));
+                    t1.getList_partidos().add(p);
+                    new partidos(t1,i1).setVisible(true);
+                    dispose();
+                    break;
+                case 1:
+                    Partido p1 =new Partido(t1.getList_equipos().get(2),t1.getList_equipos().get(3));
+                    t1.getList_partidos().add(p1);
+                    new partidos(t1,i1).setVisible(true);
+                    dispose();
+                    break;
+                case 2:
+                    Partido p2 =new Partido(t1.getList_partidos().get(0).getGanador(),t1.getList_partidos().get(1).getGanador());
+                    t1.getList_partidos().add(p2);
+                    new partidos(t1,i1).setVisible(true);
+                    dispose();
+                    break;
+
+            }
         }
         if (t1.getCant_equipos() == 8) {
-            jLabel1.setText(t1.getList_equipos().get(0).getNombre_equipo());
-            jLabel2.setText(t1.getList_equipos().get(1).getNombre_equipo());
-            jLabel3.setText(t1.getList_equipos().get(2).getNombre_equipo());
-            jLabel4.setText(t1.getList_equipos().get(3).getNombre_equipo());
-            jLabel5.setText(null);
-            jLabel6.setText(null);
-            jLabel7.setText(null);
-            jLabel8.setText(null);
-            jLabel9.setText(null);
-            jLabel10.setText(null);
-            jLabel11.setText(t1.getList_equipos().get(4).getNombre_equipo());
-            jLabel12.setText(t1.getList_equipos().get(5).getNombre_equipo());
-            jLabel13.setText(t1.getList_equipos().get(6).getNombre_equipo());
-            jLabel14.setText(t1.getList_equipos().get(7).getNombre_equipo());
+            
         }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

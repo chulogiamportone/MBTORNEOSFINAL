@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package mbtorneo;
 
 /**
@@ -12,11 +11,31 @@ package mbtorneo;
  */
 public class partidos extends javax.swing.JFrame {
 
-    /**
-     * Creates new form equipos
-     */
-    public partidos(Torneo t,int i) {
+    Torneo t1;
+    int i1;
+
+    public partidos(Torneo t, int i) {
         initComponents();
+        t1 = t;
+        i1 = i;
+        switch (i1) {
+            case 0:
+                LabelPartido.setText("Semifinal 1");
+                jLabel1.setText(t1.getList_partidos().get(0).getEquipo_1().getNombre_equipo());
+                jLabel2.setText(t1.getList_partidos().get(0).getEquipo_2().getNombre_equipo());
+                break;
+            case 1:
+                LabelPartido.setText("Semifinal 2");
+                jLabel1.setText(t1.getList_partidos().get(1).getEquipo_1().getNombre_equipo());
+                jLabel2.setText(t1.getList_partidos().get(1).getEquipo_2().getNombre_equipo());
+                break;
+            case 2:
+                LabelPartido.setText("GRAN FINAL");
+                jLabel1.setText(t1.getList_partidos().get(2).getEquipo_1().getNombre_equipo());
+                jLabel2.setText(t1.getList_partidos().get(2).getEquipo_2().getNombre_equipo());
+                break;
+
+        }
     }
 
     /**
@@ -28,79 +47,75 @@ public class partidos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ImputCNombre5 = new javax.swing.JTextField();
-        ImputCNombre6 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        LabelCrear = new javax.swing.JLabel();
-        BotonInicio = new javax.swing.JButton();
-        ImputCNombre12 = new javax.swing.JTextField();
-        ImputCNombre4 = new javax.swing.JTextField();
+        LabelPartido = new javax.swing.JLabel();
+        BotonPartido = new javax.swing.JButton();
+        ImputPGoles1 = new javax.swing.JTextField();
+        ImputPGoles2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-
-        ImputCNombre5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre5.setText("Nombre del Equipo");
-        ImputCNombre5.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre5ActionPerformed(evt);
-            }
-        });
-
-        ImputCNombre6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre6.setText("Nombre del Equipo");
-        ImputCNombre6.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre6ActionPerformed(evt);
-            }
-        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
 
-        LabelCrear.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
-        LabelCrear.setForeground(new java.awt.Color(255, 255, 255));
-        LabelCrear.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelCrear.setText("NUEVO EQUIPO");
-        LabelCrear.setToolTipText("");
-        LabelCrear.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        LabelCrear.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        LabelCrear.setMaximumSize(new java.awt.Dimension(210003, 290000));
-        LabelCrear.setPreferredSize(new java.awt.Dimension(480, 100));
+        LabelPartido.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
+        LabelPartido.setForeground(new java.awt.Color(255, 255, 255));
+        LabelPartido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelPartido.setText("NUEVO EQUIPO");
+        LabelPartido.setToolTipText("");
+        LabelPartido.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        LabelPartido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        LabelPartido.setMaximumSize(new java.awt.Dimension(210003, 290000));
+        LabelPartido.setPreferredSize(new java.awt.Dimension(480, 100));
 
-        BotonInicio.setText("SIGUIENTE");
-        BotonInicio.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        BotonInicio.setMaximumSize(new java.awt.Dimension(73000, 200003));
-        BotonInicio.setOpaque(false);
-        BotonInicio.setPreferredSize(new java.awt.Dimension(150, 25));
-        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
+        BotonPartido.setText("SIGUIENTE");
+        BotonPartido.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        BotonPartido.setMaximumSize(new java.awt.Dimension(73000, 200003));
+        BotonPartido.setOpaque(false);
+        BotonPartido.setPreferredSize(new java.awt.Dimension(150, 25));
+        BotonPartido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonInicioActionPerformed(evt);
+                BotonPartidoActionPerformed(evt);
             }
         });
 
-        ImputCNombre12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre12.setText("GOLES");
-        ImputCNombre12.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre3ActionPerformed(evt);
+        ImputPGoles1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputPGoles1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputPGoles1.setText("GOLES");
+        ImputPGoles1.setPreferredSize(new java.awt.Dimension(300, 75));
+
+        ImputPGoles2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ImputPGoles2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ImputPGoles2.setText("GOLES");
+        ImputPGoles2.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputPGoles2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputPGoles2MouseClicked(evt);
+            }
+        });
+        ImputPGoles2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputPGoles2KeyTyped(evt);
             }
         });
 
-        ImputCNombre4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ImputCNombre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ImputCNombre4.setText("GOLES");
-        ImputCNombre4.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputCNombre4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputCNombre4ActionPerformed(evt);
+        jLabel1.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("jLabel2");
+        jLabel1.setMaximumSize(null);
+        jLabel1.setMinimumSize(null);
+        jLabel1.setPreferredSize(new java.awt.Dimension(150, 45));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jLabel1KeyTyped(evt);
             }
         });
 
@@ -112,14 +127,6 @@ public class partidos extends javax.swing.JFrame {
         jLabel2.setMinimumSize(null);
         jLabel2.setPreferredSize(new java.awt.Dimension(150, 45));
 
-        jLabel3.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("jLabel2");
-        jLabel3.setMaximumSize(null);
-        jLabel3.setMinimumSize(null);
-        jLabel3.setPreferredSize(new java.awt.Dimension(150, 45));
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -128,38 +135,38 @@ public class partidos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotonPartido, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LabelPartido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(103, 103, 103))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(77, 77, 77)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(61, 61, 61))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addComponent(ImputCNombre12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ImputPGoles1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ImputPGoles2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(LabelCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelPartido, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(64, 64, 64)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ImputCNombre12, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ImputCNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ImputPGoles1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ImputPGoles2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(134, 134, 134)
-                .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BotonPartido, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43))
         );
 
@@ -182,25 +189,99 @@ public class partidos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ImputCNombre5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre5ActionPerformed
+    private void BotonPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPartidoActionPerformed
+        String g1 = ImputPGoles1.getText();
+        String g2 = ImputPGoles2.getText();
 
-    private void ImputCNombre6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre6ActionPerformed
+        if (g1.matches("-?\\d+") && g2.matches("-?\\d+")) {
+            if (g1 == g2) {
+                switch (i1) {
+                    case 0:
+                        t1.getList_partidos().get(0).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(0).setGole2(Integer.parseInt(g2));
+                        new partidosP(t1, i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 1:
+                        t1.getList_partidos().get(1).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(1).setGole2(Integer.parseInt(g2));
+                        new partidosP(t1, i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 2:
+                        t1.getList_partidos().get(2).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(2).setGole2(Integer.parseInt(g2));
+                        new partidosP(t1, i1).setVisible(true);
+                        dispose();
+                        break;
 
-    private void ImputCNombre4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre4ActionPerformed
+                }
 
-    private void ImputCNombre3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputCNombre3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputCNombre3ActionPerformed
+            } else {
+                switch (i1) {
+                    case 0:
+                        t1.getList_partidos().get(0).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(0).setGole2(Integer.parseInt(g2));
+                        i1=i1+1;
+                        if(t1.getList_partidos().get(0).getGole1()>t1.getList_partidos().get(0).getGole2()){
+                            t1.getList_partidos().get(0).setGanador(t1.getList_partidos().get(0).getEquipo_1());
+                            
+                        }else{
+                            t1.getList_partidos().get(0).setGanador(t1.getList_partidos().get(0).getEquipo_2());
+                        }
+                        new llaves(t1,i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 1:
+                        t1.getList_partidos().get(1).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(1).setGole2(Integer.parseInt(g2));
+                        i1=i1+1;
+                        if(t1.getList_partidos().get(1).getGole1()>t1.getList_partidos().get(1).getGole2()){
+                            t1.getList_partidos().get(1).setGanador(t1.getList_partidos().get(1).getEquipo_1());
+                            
+                        }else{
+                            t1.getList_partidos().get(1).setGanador(t1.getList_partidos().get(1).getEquipo_2());
+                        }
+                        new llaves(t1,i1).setVisible(true);
+                        dispose();
+                        break;
+                    case 2:
+                        t1.getList_partidos().get(2).setGole1(Integer.parseInt(g1));
+                        t1.getList_partidos().get(2).setGole2(Integer.parseInt(g2));
+                        i1=i1+1;
+                        if(t1.getList_partidos().get(2).getGole1()>t1.getList_partidos().get(2).getGole2()){
+                            t1.getList_partidos().get(2).setGanador(t1.getList_partidos().get(2).getEquipo_1());
+                            
+                        }else{
+                            t1.getList_partidos().get(2).setGanador(t1.getList_partidos().get(2).getEquipo_2());
+                        }
+                        new llaves(t1,i1).setVisible(true);
+                        dispose();
+                        break;
 
-    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        new crear().setVisible(true);
-    }//GEN-LAST:event_BotonInicioActionPerformed
+                }
+            }
+
+        }
+
+
+    }//GEN-LAST:event_BotonPartidoActionPerformed
+
+    private void jLabel1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1KeyTyped
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void ImputPGoles2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputPGoles2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputPGoles2KeyTyped
+
+    private void ImputPGoles2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputPGoles2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImputPGoles2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -232,20 +313,18 @@ public class partidos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-               
+
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonInicio;
-    private javax.swing.JTextField ImputCNombre12;
-    private javax.swing.JTextField ImputCNombre4;
-    private javax.swing.JTextField ImputCNombre5;
-    private javax.swing.JTextField ImputCNombre6;
-    private javax.swing.JLabel LabelCrear;
+    private javax.swing.JButton BotonPartido;
+    private javax.swing.JTextField ImputPGoles1;
+    private javax.swing.JTextField ImputPGoles2;
+    private javax.swing.JLabel LabelPartido;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
