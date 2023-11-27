@@ -200,11 +200,15 @@ public class crear extends javax.swing.JFrame {
                     break;
 
             }
+            if(cant!=16){
+                
+            
             name = ImputCNombre.getText();
             ArrayList<Equipo> list_equipos = new ArrayList<>();
             Torneo t = new Torneo(cant, name, list_equipos);
             new equipos(t, 0).setVisible(true);
             dispose();
+            }
         }
     }//GEN-LAST:event_BotonCrearActionPerformed
 
