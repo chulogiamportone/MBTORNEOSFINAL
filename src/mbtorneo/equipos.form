@@ -125,7 +125,7 @@
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                   <Component id="LabelCNombre" pref="42" max="32767" attributes="0"/>
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Component id="ImputCNombre" pref="28" max="32767" attributes="0"/>
+                  <Component id="ImputCNombre" pref="30" max="32767" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="LabelCNombre1" pref="42" max="32767" attributes="0"/>
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>

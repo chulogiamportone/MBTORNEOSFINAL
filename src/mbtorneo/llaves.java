@@ -5,7 +5,6 @@
  */
 package mbtorneo;
 
-
 import javax.swing.JLabel;
 
 /**
@@ -16,10 +15,12 @@ public class llaves extends javax.swing.JFrame {
 
     Torneo t1;
     int i1;
-    public llaves(Torneo t,int i) {
-        t1=t;
-        i1=i;
+
+    public llaves(Torneo t, int i) {
+        t1 = t;
+        i1 = i;
         initComponents();
+        setLocationRelativeTo(this);
         if (t.getCant_equipos() == 4) {
             jLabel1.setText(t.getList_equipos().get(0).getNombre_equipo());
             jLabel2.setText(t.getList_equipos().get(1).getNombre_equipo());
@@ -66,6 +67,44 @@ public class llaves extends javax.swing.JFrame {
             jLabel12.setText(t.getList_equipos().get(5).getNombre_equipo());
             jLabel13.setText(t.getList_equipos().get(6).getNombre_equipo());
             jLabel14.setText(t.getList_equipos().get(7).getNombre_equipo());
+            switch (i1) {
+                case 1:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    break;
+                case 2:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    break;
+                case 3:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    jLabel9.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
+                    break;
+                case 4:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    jLabel9.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
+                    jLabel10.setText(t1.getList_partidos().get(3).getGanador().getNombre_equipo());
+                    break;
+                case 5:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    jLabel9.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
+                    jLabel10.setText(t1.getList_partidos().get(3).getGanador().getNombre_equipo());
+                    jLabel7.setText(t1.getList_partidos().get(4).getGanador().getNombre_equipo());
+                    
+                    break;
+                case 6:
+                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
+                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
+                    jLabel9.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
+                    jLabel10.setText(t1.getList_partidos().get(3).getGanador().getNombre_equipo());
+                    jLabel7.setText(t1.getList_partidos().get(4).getGanador().getNombre_equipo());
+                    jLabel8.setText(t1.getList_partidos().get(5).getGanador().getNombre_equipo());
+                    break;
+                
+
+            }
         }
 
     }
@@ -302,32 +341,76 @@ public class llaves extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (t1.getCant_equipos() == 4) {
-           switch (i1) {
+            switch (i1) {
                 case 0:
-                    Partido p =new Partido(t1.getList_equipos().get(0),t1.getList_equipos().get(1));
+                    Partido p = new Partido(t1.getList_equipos().get(0), t1.getList_equipos().get(1));
                     t1.getList_partidos().add(p);
-                    new partidos(t1,i1).setVisible(true);
+                    new partidos(t1, i1).setVisible(true);
                     dispose();
                     break;
                 case 1:
-                    Partido p1 =new Partido(t1.getList_equipos().get(2),t1.getList_equipos().get(3));
+                    Partido p1 = new Partido(t1.getList_equipos().get(2), t1.getList_equipos().get(3));
                     t1.getList_partidos().add(p1);
-                    new partidos(t1,i1).setVisible(true);
+                    new partidos(t1, i1).setVisible(true);
                     dispose();
                     break;
                 case 2:
-                    Partido p2 =new Partido(t1.getList_partidos().get(0).getGanador(),t1.getList_partidos().get(1).getGanador());
+                    Partido p2 = new Partido(t1.getList_partidos().get(0).getGanador(), t1.getList_partidos().get(1).getGanador());
                     t1.getList_partidos().add(p2);
-                    new partidos(t1,i1).setVisible(true);
+                    new partidos(t1, i1).setVisible(true);
                     dispose();
                     break;
 
             }
         }
         if (t1.getCant_equipos() == 8) {
-            
+            switch (i1) {
+                case 0:
+                    Partido p = new Partido(t1.getList_equipos().get(0), t1.getList_equipos().get(1));
+                    t1.getList_partidos().add(p);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+                case 1:
+                    Partido p1 = new Partido(t1.getList_equipos().get(2), t1.getList_equipos().get(3));
+                    t1.getList_partidos().add(p1);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+                case 2:
+                    Partido p2 = new Partido(t1.getList_equipos().get(4), t1.getList_equipos().get(5));
+                    t1.getList_partidos().add(p2);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+                case 3:
+                    Partido p3 = new Partido(t1.getList_equipos().get(6), t1.getList_equipos().get(7));
+                    t1.getList_partidos().add(p3);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+                case 4:
+                    Partido p4 = new Partido(t1.getList_partidos().get(0).getGanador(), t1.getList_partidos().get(1).getGanador());
+                    t1.getList_partidos().add(p4);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+                case 5:
+                    Partido p5 = new Partido(t1.getList_partidos().get(2).getGanador(), t1.getList_partidos().get(3).getGanador());
+                    t1.getList_partidos().add(p5);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+                case 6:
+                    Partido p6 = new Partido(t1.getList_partidos().get(4).getGanador(), t1.getList_partidos().get(5).getGanador());
+                    t1.getList_partidos().add(p6);
+                    new partidos(t1, i1).setVisible(true);
+                    dispose();
+                    break;
+
+            }
         }
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
