@@ -27,18 +27,14 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" pref="700" max="-2" attributes="0"/>
-
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-
           <Component id="jPanel1" min="-2" pref="505" max="-2" attributes="0"/>
-
       </Group>
     </DimensionLayout>
   </Layout>
@@ -106,9 +102,7 @@
                       <Component id="jLabel3" pref="80" max="32767" attributes="0"/>
                       <Component id="jLabel4" max="32767" attributes="0"/>
                   </Group>
-
                   <EmptySpace pref="25" max="32767" attributes="0"/>
-
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="ImputPPenales2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="ImputPPenales1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>

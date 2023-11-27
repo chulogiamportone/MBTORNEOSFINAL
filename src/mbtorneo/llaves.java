@@ -113,23 +113,22 @@ public class llaves extends javax.swing.JFrame {
         }
 
     }
-
     private void cargarImagen() {
-        ImageIcon icon = new ImageIcon("D:\\Escritorio\\mB\\MBTORNEOSFINAL\\src\\IMG\\chicaizquierda27x66.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\chicaizquierda27x66.png");
         Image img = icon.getImage();
         Image nuevaImagen = img.getScaledInstance(45, 160,java.awt.Image.SCALE_SMOOTH);
         Icon nuevoIcono = new ImageIcon(nuevaImagen);
         jLabel15.setIcon(icon);
         jLabel16.setIcon(icon);
         
-        ImageIcon icon2 = new ImageIcon("D:\\Escritorio\\mB\\MBTORNEOSFINAL\\src\\IMG\\grandeizquierda45x160.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\grandeizquierda45x160.png");
         jLabel17.setIcon(icon2);
         
-        ImageIcon icon3 = new ImageIcon("D:\\Escritorio\\mB\\MBTORNEOSFINAL\\src\\IMG\\chicaderecha27x66.png");
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\chicaderecha27x66.png");
         jLabel18.setIcon(icon3);
         jLabel19.setIcon(icon3);
         
-        ImageIcon icon4 = new ImageIcon("D:\\Escritorio\\mB\\MBTORNEOSFINAL\\src\\IMG\\grandederechea45x160.png");
+        ImageIcon icon4 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\grandederechea45x160.png");
         jLabel20.setIcon(icon4);
 
     }
