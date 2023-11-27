@@ -44,11 +44,7 @@ public class llaves extends javax.swing.JFrame {
                     jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
                     jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
                     break;
-                case 3:
-                    jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
-                    jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
-                    jLabel7.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
-                    break;
+                
 
             }
         }

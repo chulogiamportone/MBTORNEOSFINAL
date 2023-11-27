@@ -254,9 +254,13 @@ public class partidos extends javax.swing.JFrame {
                     t1.getList_partidos().get(i1).setGanador(t1.getList_partidos().get(i1).getEquipo_2());
                 }
                 i1 = i1 + 1;
-                new llaves(t1, i1).setVisible(true);
-                dispose();
-
+                if(i1==t1.getCant_equipos()-1){
+                    new Final(t1).setVisible(true);
+                    dispose();
+                }else{
+                   new llaves(t1, i1).setVisible(true);
+                   dispose(); 
+                }
             }
         }
 
