@@ -184,13 +184,13 @@ public class llaves extends javax.swing.JFrame {
         LabelCrear.setMaximumSize(new java.awt.Dimension(210003, 290000));
         LabelCrear.setPreferredSize(new java.awt.Dimension(480, 100));
         jPanel1.add(LabelCrear);
-        LabelCrear.setBounds(270, 0, 540, 57);
+        LabelCrear.setBounds(480, 10, 190, 57);
 
         jLabel1.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel1");
-        jLabel1.setVerticalAlignment(1);
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel1.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel1);
@@ -200,7 +200,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("jLabel2");
-        jLabel2.setVerticalAlignment(1);
+        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel2.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel2);
@@ -210,7 +210,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("jLabel3");
-        jLabel3.setVerticalAlignment(1);
+        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel3);
@@ -220,7 +220,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("jLabel4");
-        jLabel4.setVerticalAlignment(1);
+        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel4.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel4);
@@ -230,7 +230,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("jLabel5");
-        jLabel5.setVerticalAlignment(1);
+        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel5.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel5);
@@ -240,7 +240,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("jLabel7");
-        jLabel6.setVerticalAlignment(1);
+        jLabel6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel6.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel6);
@@ -250,7 +250,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("jLabel6");
-        jLabel7.setVerticalAlignment(1);
+        jLabel7.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel7.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel7);
@@ -260,7 +260,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("jLabel8");
-        jLabel8.setVerticalAlignment(1);
+        jLabel8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel8.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel8);
@@ -270,7 +270,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("jLabel9");
-        jLabel9.setVerticalAlignment(1);
+        jLabel9.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel9.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel9);
@@ -280,7 +280,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("jLabel12");
-        jLabel10.setVerticalAlignment(1);
+        jLabel10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel10.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel10);
@@ -290,7 +290,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("jLabel10");
-        jLabel11.setVerticalAlignment(1);
+        jLabel11.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel11.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel11);
@@ -300,7 +300,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("jLabel11");
-        jLabel12.setVerticalAlignment(1);
+        jLabel12.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel12.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel12);
@@ -310,7 +310,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("jLabel13");
-        jLabel13.setVerticalAlignment(1);
+        jLabel13.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel13.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel13);
@@ -320,7 +320,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("jLabel14");
-        jLabel14.setVerticalAlignment(1);
+        jLabel14.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jLabel14.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel14);
@@ -333,7 +333,7 @@ public class llaves extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(860, 499, 180, 50);
+        jButton1.setBounds(930, 430, 180, 50);
 
         jLabel19.setText("jLabel15");
         jPanel1.add(jLabel19);
@@ -369,7 +369,7 @@ public class llaves extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 502, Short.MAX_VALUE)
         );
 
         pack();
