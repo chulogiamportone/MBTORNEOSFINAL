@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package mbtorneo;
 
 /**
@@ -12,11 +11,34 @@ package mbtorneo;
  */
 public class partidosP extends javax.swing.JFrame {
 
-    /**
-     * Creates new form equipos
-     */
-    public partidosP(Torneo t,int i) {
+    Torneo t1;
+    int i1;
+    boolean a = false;
+    boolean b = false;
+
+    public partidosP(Torneo t, int i) {
         initComponents();
+        setLocationRelativeTo(this);
+        t1 = t;
+        i1 = i;
+        switch (i1) {
+            case 0:
+                LabelPartido.setText("Semifinal 1");
+                break;
+            case 1:
+                LabelPartido.setText("Semifinal 2");
+
+                break;
+            case 2:
+                LabelPartido.setText("GRAN FINAL");
+
+                break;
+
+        }
+        jLabel1.setText(t1.getList_partidos().get(i1).getEquipo_1().getNombre_equipo());
+        jLabel2.setText(t1.getList_partidos().get(i1).getEquipo_2().getNombre_equipo());
+        jLabel3.setText(Integer.toString(t1.getList_partidos().get(i1).getGole1()));
+        jLabel4.setText(Integer.toString(t1.getList_partidos().get(i1).getGole2()));
     }
 
     /**
@@ -39,9 +61,10 @@ public class partidosP extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(700, 500));
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 500));
 
         LabelPartido.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         LabelPartido.setForeground(new java.awt.Color(255, 255, 255));
@@ -79,9 +102,14 @@ public class partidosP extends javax.swing.JFrame {
         ImputPPenales2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputPPenales2.setText("PENALES");
         ImputPPenales2.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputPPenales2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputPPenales2ActionPerformed(evt);
+        ImputPPenales2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputPPenales2MouseClicked(evt);
+            }
+        });
+        ImputPPenales2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputPPenales2KeyTyped(evt);
             }
         });
 
@@ -89,9 +117,14 @@ public class partidosP extends javax.swing.JFrame {
         ImputPPenales1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputPPenales1.setText("PENALES");
         ImputPPenales1.setPreferredSize(new java.awt.Dimension(300, 75));
-        ImputPPenales1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ImputPPenales1ActionPerformed(evt);
+        ImputPPenales1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputPPenales1MouseClicked(evt);
+            }
+        });
+        ImputPPenales1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputPPenales1KeyTyped(evt);
             }
         });
 
@@ -147,7 +180,9 @@ public class partidosP extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ImputPPenales2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ImputPPenales1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -161,28 +196,73 @@ public class partidosP extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPartidoActionPerformed
-        new crear().setVisible(true);
+        int g1;
+        int g2;
+
+        if (ImputPPenales1.getText().matches("-?\\d+") && ImputPPenales2.getText().matches("-?\\d+")) {
+            g1 = Integer.parseInt(ImputPPenales1.getText());
+            g2 = Integer.parseInt(ImputPPenales2.getText());
+            if (g1 != g2) {
+                t1.getList_partidos().get(i1).setPenales1(g1);
+                t1.getList_partidos().get(i1).setPenales2(g2);
+
+                if (t1.getList_partidos().get(i1).getPenales1() > t1.getList_partidos().get(i1).getPenales2()) {
+                    t1.getList_partidos().get(i1).setGanador(t1.getList_partidos().get(i1).getEquipo_1());
+
+                } else {
+                    t1.getList_partidos().get(i1).setGanador(t1.getList_partidos().get(i1).getEquipo_2());
+                }
+                i1 = i1 + 1;
+                if(i1==t1.getCant_equipos()-1){
+                    new Final(t1).setVisible(true);
+                    dispose();
+                }else{
+                   new llaves(t1, i1).setVisible(true);
+                   dispose(); 
+                }
+                
+
+            }
+        }
     }//GEN-LAST:event_BotonPartidoActionPerformed
 
-    private void ImputPPenales2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputPPenales2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputPPenales2ActionPerformed
+    private void ImputPPenales1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputPPenales1KeyTyped
+        a = true;
+    }//GEN-LAST:event_ImputPPenales1KeyTyped
 
-    private void ImputPPenales1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImputPPenales1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ImputPPenales1ActionPerformed
+    private void ImputPPenales1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputPPenales1MouseClicked
+        if (a == false) {
+
+            ImputPPenales1.setText(null);
+
+        }
+    }//GEN-LAST:event_ImputPPenales1MouseClicked
+
+    private void ImputPPenales2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputPPenales2KeyTyped
+        b = true;
+    }//GEN-LAST:event_ImputPPenales2KeyTyped
+
+    private void ImputPPenales2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputPPenales2MouseClicked
+        if (b == false) {
+
+            ImputPPenales2.setText(null);
+
+        }
+    }//GEN-LAST:event_ImputPPenales2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -214,7 +294,7 @@ public class partidosP extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
+
             }
         });
     }

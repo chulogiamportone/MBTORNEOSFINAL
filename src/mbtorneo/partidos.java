@@ -13,29 +13,68 @@ public class partidos extends javax.swing.JFrame {
 
     Torneo t1;
     int i1;
+    boolean a = false;
+    boolean b = false;
 
     public partidos(Torneo t, int i) {
         initComponents();
+        setLocationRelativeTo(this);
         t1 = t;
         i1 = i;
-        switch (i1) {
-            case 0:
-                LabelPartido.setText("Semifinal 1");
-                jLabel1.setText(t1.getList_partidos().get(0).getEquipo_1().getNombre_equipo());
-                jLabel2.setText(t1.getList_partidos().get(0).getEquipo_2().getNombre_equipo());
-                break;
-            case 1:
-                LabelPartido.setText("Semifinal 2");
-                jLabel1.setText(t1.getList_partidos().get(1).getEquipo_1().getNombre_equipo());
-                jLabel2.setText(t1.getList_partidos().get(1).getEquipo_2().getNombre_equipo());
-                break;
-            case 2:
-                LabelPartido.setText("GRAN FINAL");
-                jLabel1.setText(t1.getList_partidos().get(2).getEquipo_1().getNombre_equipo());
-                jLabel2.setText(t1.getList_partidos().get(2).getEquipo_2().getNombre_equipo());
-                break;
-
+        if (t1.getCant_equipos() == 4) {
+            switch (i1) {
+                case 0:
+                    LabelPartido.setText("Semifinal 1");
+                    break;
+                case 1:
+                    LabelPartido.setText("Semifinal 2");
+                    break;
+                case 2:
+                    LabelPartido.setText("GRAN FINAL");
+                    break;
+            }
         }
+        if (t1.getCant_equipos() == 4) {
+            switch (i1) {
+                case 0:
+                    LabelPartido.setText("Semifinal 1");
+                    break;
+                case 1:
+                    LabelPartido.setText("Semifinal 2");
+                    break;
+                case 2:
+                    LabelPartido.setText("GRAN FINAL");
+                    break;
+            }
+        }
+        if (t1.getCant_equipos() == 8) {
+            switch (i1) {
+                case 0:
+                    LabelPartido.setText("Cuartos de Final 1");
+                    break;
+                case 1:
+                    LabelPartido.setText("Cuartos de Final 2");
+                    break;
+                case 2:
+                    LabelPartido.setText("Cuartos de Final 3");
+                    break;
+                case 3:
+                    LabelPartido.setText("Cuartos de Final 4");
+                    break;
+                case 4:
+                    LabelPartido.setText("Semifinal 1");
+                    break;
+                case 5:
+                    LabelPartido.setText("Semifinal 2");
+                    break;
+                case 6:
+                    LabelPartido.setText("GRAN FINAL");
+                    break;
+            }
+        }
+
+        jLabel1.setText(t1.getList_partidos().get(i1).getEquipo_1().getNombre_equipo());
+        jLabel2.setText(t1.getList_partidos().get(i1).getEquipo_2().getNombre_equipo());
     }
 
     /**
@@ -56,9 +95,10 @@ public class partidos extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(700, 500));
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1280, 640));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 500));
 
         LabelPartido.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         LabelPartido.setForeground(new java.awt.Color(255, 255, 255));
@@ -84,6 +124,16 @@ public class partidos extends javax.swing.JFrame {
         ImputPGoles1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImputPGoles1.setText("GOLES");
         ImputPGoles1.setPreferredSize(new java.awt.Dimension(300, 75));
+        ImputPGoles1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImputPGoles1MouseClicked(evt);
+            }
+        });
+        ImputPGoles1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ImputPGoles1KeyTyped(evt);
+            }
+        });
 
         ImputPGoles2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ImputPGoles2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -105,16 +155,6 @@ public class partidos extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel2");
         jLabel1.setPreferredSize(new java.awt.Dimension(150, 45));
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
-            }
-        });
-        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jLabel1KeyTyped(evt);
-            }
-        });
 
         jLabel2.setFont(new java.awt.Font("Twitchy.TV", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -168,110 +208,81 @@ public class partidos extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPartidoActionPerformed
-        String g1 = ImputPGoles1.getText();
-        String g2 = ImputPGoles2.getText();
 
-        if (g1.matches("-?\\d+") && g2.matches("-?\\d+")) {
+        int g1;
+        int g2;
+        if (ImputPGoles1.getText().matches("-?\\d+") && ImputPGoles2.getText().matches("-?\\d+")) {
+            g1 = Integer.parseInt(ImputPGoles1.getText());
+            g2 = Integer.parseInt(ImputPGoles2.getText());
             if (g1 == g2) {
-                switch (i1) {
-                    case 0:
-                        t1.getList_partidos().get(0).setGole1(Integer.parseInt(g1));
-                        t1.getList_partidos().get(0).setGole2(Integer.parseInt(g2));
-                        new partidosP(t1, i1).setVisible(true);
-                        dispose();
-                        break;
-                    case 1:
-                        t1.getList_partidos().get(1).setGole1(Integer.parseInt(g1));
-                        t1.getList_partidos().get(1).setGole2(Integer.parseInt(g2));
-                        new partidosP(t1, i1).setVisible(true);
-                        dispose();
-                        break;
-                    case 2:
-                        t1.getList_partidos().get(2).setGole1(Integer.parseInt(g1));
-                        t1.getList_partidos().get(2).setGole2(Integer.parseInt(g2));
-                        new partidosP(t1, i1).setVisible(true);
-                        dispose();
-                        break;
 
-                }
+                t1.getList_partidos().get(i1).setGole1(g1);
+                t1.getList_partidos().get(i1).setGole2(g2);
+                new partidosP(t1, i1).setVisible(true);
+                dispose();
 
             } else {
-                switch (i1) {
-                    case 0:
-                        t1.getList_partidos().get(0).setGole1(Integer.parseInt(g1));
-                        t1.getList_partidos().get(0).setGole2(Integer.parseInt(g2));
-                        i1=i1+1;
-                        if(t1.getList_partidos().get(0).getGole1()>t1.getList_partidos().get(0).getGole2()){
-                            t1.getList_partidos().get(0).setGanador(t1.getList_partidos().get(0).getEquipo_1());
-                            
-                        }else{
-                            t1.getList_partidos().get(0).setGanador(t1.getList_partidos().get(0).getEquipo_2());
-                        }
-                        new llaves(t1,i1).setVisible(true);
-                        dispose();
-                        break;
-                    case 1:
-                        t1.getList_partidos().get(1).setGole1(Integer.parseInt(g1));
-                        t1.getList_partidos().get(1).setGole2(Integer.parseInt(g2));
-                        i1=i1+1;
-                        if(t1.getList_partidos().get(1).getGole1()>t1.getList_partidos().get(1).getGole2()){
-                            t1.getList_partidos().get(1).setGanador(t1.getList_partidos().get(1).getEquipo_1());
-                            
-                        }else{
-                            t1.getList_partidos().get(1).setGanador(t1.getList_partidos().get(1).getEquipo_2());
-                        }
-                        new llaves(t1,i1).setVisible(true);
-                        dispose();
-                        break;
-                    case 2:
-                        t1.getList_partidos().get(2).setGole1(Integer.parseInt(g1));
-                        t1.getList_partidos().get(2).setGole2(Integer.parseInt(g2));
-                        i1=i1+1;
-                        if(t1.getList_partidos().get(2).getGole1()>t1.getList_partidos().get(2).getGole2()){
-                            t1.getList_partidos().get(2).setGanador(t1.getList_partidos().get(2).getEquipo_1());
-                            
-                        }else{
-                            t1.getList_partidos().get(2).setGanador(t1.getList_partidos().get(2).getEquipo_2());
-                        }
-                        new llaves(t1,i1).setVisible(true);
-                        dispose();
-                        break;
 
+                t1.getList_partidos().get(i1).setGole1(g1);
+                t1.getList_partidos().get(i1).setGole2(g2);
+
+                if (t1.getList_partidos().get(i1).getGole1() > t1.getList_partidos().get(i1).getGole2()) {
+                    t1.getList_partidos().get(i1).setGanador(t1.getList_partidos().get(i1).getEquipo_1());
+
+                } else {
+                    t1.getList_partidos().get(i1).setGanador(t1.getList_partidos().get(i1).getEquipo_2());
+                }
+                i1 = i1 + 1;
+                if(i1==t1.getCant_equipos()-1){
+                    new Final(t1).setVisible(true);
+                    dispose();
+                }else{
+                   new llaves(t1, i1).setVisible(true);
+                   dispose(); 
                 }
             }
-
         }
 
 
     }//GEN-LAST:event_BotonPartidoActionPerformed
 
-    private void jLabel1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel1KeyTyped
-
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel1MouseClicked
-
     private void ImputPGoles2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputPGoles2KeyTyped
-        // TODO add your handling code here:
+        a = true;
     }//GEN-LAST:event_ImputPGoles2KeyTyped
 
     private void ImputPGoles2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputPGoles2MouseClicked
-        // TODO add your handling code here:
+        if (a == false) {
+
+            ImputPGoles2.setText(null);
+
+        }
     }//GEN-LAST:event_ImputPGoles2MouseClicked
+
+    private void ImputPGoles1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ImputPGoles1KeyTyped
+        b = true;
+    }//GEN-LAST:event_ImputPGoles1KeyTyped
+
+    private void ImputPGoles1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImputPGoles1MouseClicked
+        if (b == false) {
+
+            ImputPGoles1.setText(null);
+
+        }
+    }//GEN-LAST:event_ImputPGoles1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -287,16 +298,21 @@ public class partidos extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidos.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidos.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidos.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(partidos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(partidos.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
