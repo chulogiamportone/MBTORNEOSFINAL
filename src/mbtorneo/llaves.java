@@ -5,7 +5,6 @@
  */
 package mbtorneo;
 
-
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -53,7 +52,6 @@ public class llaves extends javax.swing.JFrame {
                     jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
                     jLabel6.setText(t1.getList_partidos().get(1).getGanador().getNombre_equipo());
                     break;
-                
 
             }
         }
@@ -97,7 +95,7 @@ public class llaves extends javax.swing.JFrame {
                     jLabel9.setText(t1.getList_partidos().get(2).getGanador().getNombre_equipo());
                     jLabel10.setText(t1.getList_partidos().get(3).getGanador().getNombre_equipo());
                     jLabel7.setText(t1.getList_partidos().get(4).getGanador().getNombre_equipo());
-                    
+
                     break;
                 case 6:
                     jLabel5.setText(t1.getList_partidos().get(0).getGanador().getNombre_equipo());
@@ -107,29 +105,42 @@ public class llaves extends javax.swing.JFrame {
                     jLabel7.setText(t1.getList_partidos().get(4).getGanador().getNombre_equipo());
                     jLabel8.setText(t1.getList_partidos().get(5).getGanador().getNombre_equipo());
                     break;
-                
 
             }
         }
 
     }
+
     private void cargarImagen() {
         ImageIcon icon = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\chicaizquierda27x66.png");
         Image img = icon.getImage();
-        Image nuevaImagen = img.getScaledInstance(45, 160,java.awt.Image.SCALE_SMOOTH);
+        Image nuevaImagen = img.getScaledInstance(45, 160, java.awt.Image.SCALE_SMOOTH);
         Icon nuevoIcono = new ImageIcon(nuevaImagen);
         jLabel15.setIcon(icon);
         jLabel16.setIcon(icon);
-        
+
         ImageIcon icon2 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\grandeizquierda45x160.png");
         jLabel17.setIcon(icon2);
-        
-        ImageIcon icon3 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\chicaderecha27x66.png");
-        jLabel18.setIcon(icon3);
-        jLabel19.setIcon(icon3);
-        
-        ImageIcon icon4 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\grandederechea45x160.png");
-        jLabel20.setIcon(icon4);
+        if (t1.getCant_equipos() == 8) {
+            ImageIcon icon3 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\chicaderecha27x66.png");
+            jLabel18.setIcon(icon3);
+            jLabel19.setIcon(icon3);
+
+            ImageIcon icon4 = new ImageIcon("C:\\Users\\Juli\\Desktop\\ultimo merge\\MBTORNEOSFINAL\\src\\IMG\\grandederechea45x160.png");
+            jLabel20.setIcon(icon4);
+        }else{
+            jLabel18.setText(null);
+            jLabel19.setText(null);
+            jLabel20.setText(null);
+            jLabel8.setBorder(null);
+            jLabel9.setBorder(null);
+            jLabel10.setBorder(null);
+            jLabel11.setBorder(null);
+            jLabel12.setBorder(null);
+            jLabel13.setBorder(null);
+            jLabel14.setBorder(null);
+            
+        }
 
     }
 

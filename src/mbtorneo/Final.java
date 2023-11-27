@@ -70,7 +70,7 @@ public class Final extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("jLabel2");
-        jLabel3.setVerticalAlignment(1);
+        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 45));
         jLabel3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -101,7 +101,7 @@ public class Final extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
