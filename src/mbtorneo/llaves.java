@@ -6,12 +6,6 @@
 package mbtorneo;
 
 
-
-
-import java.awt.Image;
-
-import javax.swing.ImageIcon;
-
 import javax.swing.JLabel;
 
 /**
@@ -22,12 +16,10 @@ public class llaves extends javax.swing.JFrame {
 
     Torneo t1;
     int i1;
-
-    public llaves(Torneo t, int i) {
-        t1 = t;
-        i1 = i;
+    public llaves(Torneo t,int i) {
+        t1=t;
+        i1=i;
         initComponents();
-        cargarImagen();
         if (t.getCant_equipos() == 4) {
             jLabel1.setText(t.getList_equipos().get(0).getNombre_equipo());
             jLabel2.setText(t.getList_equipos().get(1).getNombre_equipo());
@@ -35,7 +27,7 @@ public class llaves extends javax.swing.JFrame {
             jLabel4.setText(t.getList_equipos().get(3).getNombre_equipo());
             jLabel5.setText(null);
             jLabel6.setText(null);
-           
+            jLabel7.setText(null);
             jLabel8.setText(null);
             jLabel9.setText(null);
             jLabel10.setText(null);
@@ -66,7 +58,7 @@ public class llaves extends javax.swing.JFrame {
             jLabel4.setText(t.getList_equipos().get(3).getNombre_equipo());
             jLabel5.setText(null);
             jLabel6.setText(null);
-           
+            jLabel7.setText(null);
             jLabel8.setText(null);
             jLabel9.setText(null);
             jLabel10.setText(null);
@@ -95,6 +87,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -103,7 +96,13 @@ public class llaves extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabelIMG = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        jSeparator6 = new javax.swing.JSeparator();
+        jSeparator7 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -142,7 +141,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel2.setMinimumSize(null);
         jLabel2.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 150, 150, 45);
+        jLabel2.setBounds(30, 160, 150, 45);
 
         jLabel3.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -152,7 +151,7 @@ public class llaves extends javax.swing.JFrame {
         jLabel3.setMinimumSize(null);
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(30, 320, 150, 45);
+        jLabel3.setBounds(30, 310, 150, 45);
 
         jLabel4.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -183,6 +182,16 @@ public class llaves extends javax.swing.JFrame {
         jLabel6.setPreferredSize(new java.awt.Dimension(150, 45));
         jPanel1.add(jLabel6);
         jLabel6.setBounds(220, 340, 150, 45);
+
+        jLabel7.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("jLabel6");
+        jLabel7.setMaximumSize(null);
+        jLabel7.setMinimumSize(null);
+        jLabel7.setPreferredSize(new java.awt.Dimension(150, 45));
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(380, 240, 150, 45);
 
         jLabel8.setFont(new java.awt.Font("Twitchy.TV", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -261,20 +270,27 @@ public class llaves extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(840, 490, 180, 50);
-
-        jLabelIMG.setText("jLabel15");
-        jPanel1.add(jLabelIMG);
-        jLabelIMG.setBounds(10, 70, 1020, 380);
+        jButton1.setBounds(860, 499, 180, 50);
+        jPanel1.add(jSeparator1);
+        jSeparator1.setBounds(290, 270, 90, 10);
+        jPanel1.add(jSeparator2);
+        jSeparator2.setBounds(100, 150, 120, 10);
+        jPanel1.add(jSeparator3);
+        jSeparator3.setBounds(100, 370, 120, 10);
+        jPanel1.add(jSeparator4);
+        jSeparator4.setBounds(850, 370, 120, 10);
+        jPanel1.add(jSeparator5);
+        jSeparator5.setBounds(850, 150, 120, 10);
+        jPanel1.add(jSeparator6);
+        jSeparator6.setBounds(530, 270, 10, 10);
+        jPanel1.add(jSeparator7);
+        jSeparator7.setBounds(690, 270, 90, 10);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1038, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1050, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -283,17 +299,9 @@ public class llaves extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void cargarImagen() {
-        ImageIcon icon = new ImageIcon("D:\\Escritorio\\mB\\MBTORNEOSFINAL\\src\\IMG\\llaves8.png");
-        jLabelIMG.setIcon(icon);
-        
-        
-
-    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (t1.getCant_equipos() == 4) {
-
            switch (i1) {
                 case 0:
                     Partido p =new Partido(t1.getList_equipos().get(0),t1.getList_equipos().get(1));
@@ -318,7 +326,6 @@ public class llaves extends javax.swing.JFrame {
         }
         if (t1.getCant_equipos() == 8) {
             
-
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -327,7 +334,27 @@ public class llaves extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(llaves.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
         //</editor-fold>
 
         /* Create and display the form */
@@ -352,9 +379,16 @@ public class llaves extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabelIMG;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
     // End of variables declaration//GEN-END:variables
 }
