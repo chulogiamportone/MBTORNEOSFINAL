@@ -31,7 +31,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="crear" alignment="1" max="32767" attributes="0"/>
+          <Component id="crear" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -95,13 +95,13 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelCrear" pref="99" max="32767" attributes="0"/>
+                  <Component id="LabelCrear" pref="101" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                  <Component id="LabelCNombre" pref="53" max="32767" attributes="0"/>
+                  <Component id="LabelCNombre" pref="54" max="32767" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="ImputCNombre" pref="72" max="32767" attributes="0"/>
+                  <Component id="ImputCNombre" pref="73" max="32767" attributes="0"/>
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelCEquipos" pref="50" max="32767" attributes="0"/>
+                  <Component id="LabelCEquipos" pref="51" max="32767" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="DesplegableCEquipos" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
